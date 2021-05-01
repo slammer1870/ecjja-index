@@ -4,7 +4,7 @@ import Image from "next/image";
 const About = () => (
   <content>
     <section className="px-4 py-12">
-      <h3 className="text-5xl mb-8 font-light text-center">What we do</h3>
+      <h3 className="text-5xl mb-8 font-light text-left w-10/12">What we do</h3>
       <card className="flex relative">
         <div className="w-10/12 h-72 bg-gray-200 p-5">
           <div className="w-10/12">
@@ -28,8 +28,8 @@ const About = () => (
       <p className="mb-8">
         Our mission is to teach you the Art of Brazilian Jiu Jitsu.
       </p>
-      <div className="aspect-w-16 aspect-h-9 mb-8">
-        <Image src="/teaching1.jpeg" alt="Darragh" layout="fill" />
+      <div className="aspect-w-16 aspect-h-9 mb-8 ">
+        <Image src="/teaching1.jpeg" alt="Darragh" layout="fill" objectFit="cover" />
       </div>
       <p className="mb-8">
         Upon beginning training with us you will start in our beginner’s
@@ -47,7 +47,7 @@ const About = () => (
         <Image src="/happy.jpeg" alt="Darragh" layout="fill" />
       </div>
       <p className="mb-8">
-        The beautiful thing about Jiu Jitsu is that it requires{" "}
+        The beautiful thing about Jiu Jitsu is that it requires
         <span className="font-bold">
           no prior experience or level of fitness to get started.
         </span>

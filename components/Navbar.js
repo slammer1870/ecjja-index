@@ -1,7 +1,7 @@
 import React from "react";
 
 const Navbar = () => (
-  <nav className="p-4 flex justify-between items-center">
+  <nav className="p-4 flex justify-between items-center lg:mx-20">
     <logo>
       <svg
         xmlns="http://www.w3.org/2000/svg"
