@@ -15,7 +15,7 @@ const About = () => (
         </div>
         <card className="flex flex-col relative md:w-5/12 lg:w-1/2 lg:pl-14 xl:pl-32">
           <h3 className="text-5xl mb-8 font-light text-left md:mb-4 md:text-3xl xl:text-5xl xl:mb-10">
-            What we do
+            Who we are
           </h3>
           <div className="w-10/12 h-full bg-gray-200 p-5 lg:h-full">
             <div className="w-10/12 font-light lg:pr-2 2xl:pr-4">
