@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className="lg:mx-40">
+      <div className="md:mx-20 lg:mx-40">
         <main>{children}</main>
       </div>
       <Footer />

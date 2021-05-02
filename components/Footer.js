@@ -1,14 +1,14 @@
 import React from "react";
 
 const Footer = () => (
-  <footer className="px-4 py-8 bg-gray-500 flex justify-between">
+  <footer className="px-4 py-8 bg-gray-500 flex justify-between md:px-20 lg:px-40">
     <form className="flex flex-col w-1/2">
       <h5 className="text-white text-sm w-max mb-3">
         Subscribe to our newsletter
       </h5>
       <div className="flex">
         <input
-          class="w-full rounded-l-lg p-1 border-t mr-0 border-b border-l text-grey-400 border-white bg-gray-500 focus:bg-white"
+          class="w-full rounded-l-lg p-1 border-t mr-0 border-b border-l text-grey-400 border-white bg-gray-500 focus:bg-white lg:w-1/3"
           placeholder="Email Address"
         />
         <button class="px-4 rounded-r-lg bg-gray-100 text-black p-2 uppercase border-white border-t border-b border-r">

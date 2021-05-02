@@ -4,34 +4,78 @@ import Image from "next/image";
 const Testimonials = () => {
   return (
     <section className="py-12 px-4">
-      <h3 className="text-5xl mb-12 font-light">What others have had to say</h3>
-      <card className="flex flex-col bg-white mb-12">
-        <div className="flex justify-center ">
-          <Image
-            src="/samtestimonial.png"
-            width={160}
-            height={160}
-            className="rounded-full z-10"
-          />
-        </div>
-        <div className="bg-gray-100 p-6 -mt-20 min-h-full h-96 relative">
-          <h3 className="text-2xl font-thin pt-20">
-            “Training at ECJJA is a good buzz and I enjoy it a lot. OSS”
-          </h3>
-          <div className="bottom-0 absolute">
-            <h3 className="text-2xl font-bold my-4">Sam Mc Nally</h3>
-            <h3 className="text-2xl font-light my-4">
-              Local Hero &amp; Web Developer @ Here
-            </h3>
+      <div className="flex justify-between mb-32">
+        <card className="flex flex-col bg-white md:w-6/12 md:mr-2 lg:3/12">
+          <div className="flex justify-center ">
+            <Image
+              src="/samtestimonial.png"
+              width={160}
+              height={160}
+              className="rounded-full z-10"
+            />
           </div>
-        </div>
-      </card>
-      <div className="flex items-center justify-around">
+          <div className="bg-gray-100 p-6 -mt-20 min-h-full h-96 relative">
+            <h3 className="text-2xl font-thin pt-20">
+              “Training at ECJJA is a good buzz and I enjoy it a lot. OSS”
+            </h3>
+            <div className="bottom-0 absolute">
+              <h3 className="text-2xl font-bold my-4">Sam Mc Nally</h3>
+              <h3 className="text-2xl font-light my-4">
+                Local Hero &amp; Web Developer @ Here
+              </h3>
+            </div>
+          </div>
+        </card>
+        <card className="hidden md:block flex flex-col bg-white md:w-6/12 md:ml-2 lg:3/12 lg:mr-2">
+          <div className="flex justify-center ">
+            <Image
+              src="/samtestimonial.png"
+              width={160}
+              height={160}
+              className="rounded-full z-10"
+            />
+          </div>
+          <div className="bg-gray-100 p-6 -mt-20 min-h-full h-96 relative">
+            <h3 className="text-2xl font-thin pt-20">
+              “Training at ECJJA is a good buzz and I enjoy it a lot. OSS”
+            </h3>
+            <div className="bottom-0 absolute">
+              <h3 className="text-2xl font-bold my-4">Sam Mc Nally</h3>
+              <h3 className="text-2xl font-light my-4">
+                Local Hero &amp; Web Developer @ Here
+              </h3>
+            </div>
+          </div>
+        </card>
+        <card className="hidden lg:block flex flex-col bg-white md:w-6/12 lg:3/12 lg:ml-2">
+          <div className="flex justify-center ">
+            <Image
+              src="/samtestimonial.png"
+              width={160}
+              height={160}
+              className="rounded-full z-10"
+            />
+          </div>
+          <div className="bg-gray-100 p-6 -mt-20 min-h-full h-96 relative">
+            <h3 className="text-2xl font-thin pt-20">
+              “Training at ECJJA is a good buzz and I enjoy it a lot. OSS”
+            </h3>
+            <div className="bottom-0 absolute">
+              <h3 className="text-2xl font-bold my-4">Sam Mc Nally</h3>
+              <h3 className="text-2xl font-light my-4">
+                Local Hero &amp; Web Developer @ Here
+              </h3>
+            </div>
+          </div>
+        </card>
+      </div>
+      <div className="flex items-center justify-center mx-auto">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="27.967"
           height="10.217"
           viewBox="0 0 27.967 10.217"
+          className="mr-2"
         >
           <line
             id="Line_4"
@@ -59,7 +103,7 @@ const Testimonials = () => {
             />
           </g>
         </svg>
-        <p className="underline">See more of our client testimonials</p>
+        <p className="border-b border-gray-800">See more of our client testimonials</p>
       </div>
     </section>
   );

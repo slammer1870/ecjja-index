@@ -1,8 +1,8 @@
 import React from "react";
 
 const Navbar = () => (
-  <nav className="p-4 flex justify-between items-center lg:mx-20">
-    <logo>
+  <nav className="p-4 w-screen flex justify-between items-center md:px-20 lg:px-40">
+    <logo className="w-1/4">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="37.068"
@@ -2340,8 +2340,8 @@ const Navbar = () => (
         </g>
       </svg>
     </logo>
-    <menu>
-      <burger>
+    <menu className="w-1/3 md:w-full lg:w-2/3 xl:w-1/2 flex justify-end">
+      <burger className="md:hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="30"
@@ -2377,16 +2377,41 @@ const Navbar = () => (
           />
         </svg>
       </burger>
-      <ul className="hidden">
-        <li>
-          <ul>
-            <li></li>
-            <li></li>
+      <ul className="hidden md:flex w-full justify-between items-center font-light">
+        <li className="flex items-center jutify-center">
+          <span>Programs</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="10"
+            height="15"
+            viewBox="0 0 19 10"
+            className="ml-2"
+          >
+            <g
+              id="Polygon_2"
+              data-name="Polygon 2"
+              transform="translate(19 12) rotate(180)"
+              fill="#707070"
+            >
+              <path
+                d="M 17.96645355224609 11.5 L 1.033547043800354 11.5 L 9.5 0.8055331707000732 L 17.96645355224609 11.5 Z"
+                stroke="none"
+              />
+              <path
+                d="M 9.5 1.611079216003418 L 2.067104339599609 11 L 16.93289566040039 11 L 9.5 1.611079216003418 M 9.5 0 L 19 12 L 0 12 L 9.5 0 Z"
+                stroke="none"
+                fill="#707070"
+              />
+            </g>
+          </svg>
+          <ul className="hidden">
+            <li>Adults</li>
+            <li>Kids</li>
           </ul>
         </li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Timetable</li>
+        <li>ECJJA Online</li>
+        <li className="bg-gray-400 px-2 py-1 text-white">Contact Us</li>
       </ul>
     </menu>
   </nav>
