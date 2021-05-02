@@ -8,7 +8,7 @@ const Testimonials = () => {
         <card className="flex flex-col bg-white md:w-6/12 md:mr-2 lg:3/12">
           <div className="flex justify-center ">
             <Image
-              src="/samtestimonial.png"
+              src="/testimonial1.png"
               width={160}
               height={160}
               className="rounded-full z-10"
@@ -21,7 +21,7 @@ const Testimonials = () => {
             <div className="bottom-0 absolute">
               <h3 className="text-2xl font-bold my-4">Sam Mc Nally</h3>
               <h3 className="text-2xl font-light my-4">
-                Local Hero &amp; Web Developer @ Here
+                Web Developer
               </h3>
             </div>
           </div>
@@ -29,7 +29,7 @@ const Testimonials = () => {
         <card className="hidden md:block flex flex-col bg-white md:w-6/12 md:ml-2 lg:3/12 lg:mr-2">
           <div className="flex justify-center ">
             <Image
-              src="/samtestimonial.png"
+              src="/testimonial2.png"
               width={160}
               height={160}
               className="rounded-full z-10"
@@ -37,12 +37,12 @@ const Testimonials = () => {
           </div>
           <div className="bg-gray-100 p-6 -mt-20 min-h-full h-96 relative">
             <h3 className="text-2xl font-thin pt-20">
-              “Training at ECJJA is a good buzz and I enjoy it a lot. OSS”
+              “My Jiu Jitsu has improved a lot training at ECJJA. I love Reverse De La Riva.”
             </h3>
             <div className="bottom-0 absolute">
-              <h3 className="text-2xl font-bold my-4">Sam Mc Nally</h3>
+              <h3 className="text-2xl font-bold my-4">Emily Manning</h3>
               <h3 className="text-2xl font-light my-4">
-                Local Hero &amp; Web Developer @ Here
+                BJJ Purple Belt
               </h3>
             </div>
           </div>
@@ -50,7 +50,7 @@ const Testimonials = () => {
         <card className="hidden lg:block flex flex-col bg-white md:w-6/12 lg:3/12 lg:ml-2">
           <div className="flex justify-center ">
             <Image
-              src="/samtestimonial.png"
+              src="/testimonial3.png"
               width={160}
               height={160}
               className="rounded-full z-10"
@@ -58,12 +58,12 @@ const Testimonials = () => {
           </div>
           <div className="bg-gray-100 p-6 -mt-20 min-h-full h-96 relative">
             <h3 className="text-2xl font-thin pt-20">
-              “Training at ECJJA is a good buzz and I enjoy it a lot. OSS”
+              “Hit you with those two points boi, don't sleep on me.”
             </h3>
             <div className="bottom-0 absolute">
-              <h3 className="text-2xl font-bold my-4">Sam Mc Nally</h3>
+              <h3 className="text-2xl font-bold my-4">Marcus Phelan</h3>
               <h3 className="text-2xl font-light my-4">
-                Local Hero &amp; Web Developer @ Here
+                BJJ Black Belt
               </h3>
             </div>
           </div>
