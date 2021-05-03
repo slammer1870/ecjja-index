@@ -5,7 +5,7 @@ const Testimonials = () => {
   return (
     <section className="py-12 px-4">
       <div className="flex justify-between mb-32">
-        <card className="flex flex-col bg-white md:w-6/12 md:mr-2 lg:3/12">
+        <card className="flex flex-col mx-auto bg-white z-0 md:w-6/12 md:mr-2 lg:3/12">
           <div className="flex justify-center ">
             <Image
               src="/testimonial1.png"
@@ -26,7 +26,7 @@ const Testimonials = () => {
             </div>
           </div>
         </card>
-        <card className="hidden md:block flex flex-col bg-white md:w-6/12 md:ml-2 lg:3/12 lg:mr-2">
+        <card className="hidden md:block flex flex-col bg-white z-0 md:w-6/12 md:ml-2 lg:3/12 lg:mr-2">
           <div className="flex justify-center ">
             <Image
               src="/testimonial2.png"
@@ -47,7 +47,7 @@ const Testimonials = () => {
             </div>
           </div>
         </card>
-        <card className="hidden lg:block flex flex-col bg-white md:w-6/12 lg:3/12 lg:ml-2">
+        <card className="hidden lg:block flex flex-col bg-white z-0 md:w-6/12 lg:3/12 lg:ml-2">
           <div className="flex justify-center ">
             <Image
               src="/testimonial3.png"
@@ -84,7 +84,7 @@ const Testimonials = () => {
             transform="translate(0 4.992)"
             fill="none"
             stroke="#707070"
-            stroke-width="1"
+            strokeWidth="1"
           />
           <g
             id="Polygon_1"

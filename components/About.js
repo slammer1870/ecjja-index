@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = () => (
   <content>
-    <section className="px-4 py-12">
+    <section className="px-4 py-12 md:px-0">
       <div className="md:flex md:justify-between">
         <div className="hidden md:block aspect-w-16 aspect-h-9 md:w-6/12 md:pb-56 lg:pb-96 ">
           <Image
@@ -35,7 +35,7 @@ const About = () => (
         </card>
       </div>
     </section>
-    <section className="py-12 px-4">
+    <section className="py-12 px-4 md:px-0">
       <div className="md:flex md:justify-between">
         <div className="md:w-5/12">
           <h3 className="text-5xl mb-8 font-light md:text-3xl md:mb-4 xl:text-5xl xl:mb-10">
@@ -77,7 +77,7 @@ const About = () => (
         </div>
       </div>
     </section>
-    <section className="py-12 px-4">
+    <section className="py-12 px-4 md:px-0">
       <h3 className="text-5xl mb-8 font-light md:hidden">
         What if I am out of shape?
       </h3>
