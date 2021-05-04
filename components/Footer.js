@@ -22,8 +22,8 @@ const Footer = () => (
         <li className="text-white flex text-sm items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="15.213"
-            height="11.41"
+            width="14"
+            height="10.197"
             viewBox="0 0 15.213 11.41"
           >
             <path
@@ -42,8 +42,8 @@ const Footer = () => (
         <li className="text-white flex text-sm items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="15.791"
-            height="19.388"
+            width="14"
+            height="17.597"
             viewBox="0 0 10.791 14.388"
           >
             <path
