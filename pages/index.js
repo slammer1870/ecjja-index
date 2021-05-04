@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Testimonails from "../components/Testimonials";
 import CallToAction from "../components/CallToAction";
+import Form from "../components/Form"
 
 export default function Home() {
   return (
@@ -17,9 +18,10 @@ export default function Home() {
       <Hero />
       <main>
         <About />
-        <CallToAction />
+        <Form />
         <Testimonails />
       </main>
+      
     </div>
   );
 }
