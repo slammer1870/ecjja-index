@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link"
+import Link from "next/link";
 
 const Testimonials = () => {
   return (
@@ -65,8 +65,8 @@ const Testimonials = () => {
           </div>
         </card>
       </div>
-      <div className="flex items-center justify-center mx-auto lg:hidden">
-        <Link href="/adults-program">
+      <Link href="/adults-program">
+        <div className="flex items-center justify-center mx-auto lg:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="27.967"
@@ -103,8 +103,8 @@ const Testimonials = () => {
           <p className="border-b border-gray-800">
             See more of our client testimonials
           </p>
-        </Link>
-      </div>
+        </div>
+      </Link>
     </section>
   );
 };
