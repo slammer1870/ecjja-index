@@ -9,7 +9,7 @@ const Form = () => (
         </h1>
         <p className="leading-relaxed mt-4">
           We value your data and privacy. The information you provide us will
-          never be used for anything other tha contacting you to get started.
+          never be used for anything other than contacting you to get started.
         </p>
       </div>
       <div className="lg:w-2/6 md:w-1/2 bg-gray-100 p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
