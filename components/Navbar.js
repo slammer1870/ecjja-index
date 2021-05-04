@@ -2476,23 +2476,23 @@ const Navbar = () => {
                 }`}
               >
                 <Link href="/adults-program">
-                  <li className="w-24 mt-2 ml-4 hover:underline">Adults</li>
+                  <li className="w-24 mt-2 ml-4 hover:underline" onClick={handleOpen}>Adults</li>
                 </Link>
                 <Link href="/kids-program">
-                  <li className="mt-2 md:pb-4 ml-4 hover:underline">Kids</li>
+                  <li className="mt-2 md:pb-4 ml-4 hover:underline" onClick={handleOpen}>Kids &amp; Teens</li>
                 </Link>
               </ul>
             </li>
             <Link href="/timetable">
-<li className="ml-9 mt-16 md:mt-0 md:ml-0 hover:underline">
+<li className="ml-9 mt-16 md:mt-0 md:ml-0 hover:underline" onClick={handleOpen}>
               Timetable
             </li></Link>
             <Link href="/ecjja-online">
-<li className="ml-9 mt-16 md:mt-0 md:ml-0 hover:underline">
+<li className="ml-9 mt-16 md:mt-0 md:ml-0 hover:underline" onClick={handleOpen}>
               ECJJA Online
             </li></Link>
             <Link href="/contact">
-<li className="ml-9 mt-16 md:mt-0 md:ml-0 bg-gray-400 px-2 py-1 text-white hover:underline">
+<li className="ml-9 mt-16 md:mt-0 md:ml-0 bg-gray-400 px-2 py-1 text-white hover:underline" onClick={handleOpen}>
               Contact Us
             </li></Link>
           </ul>
