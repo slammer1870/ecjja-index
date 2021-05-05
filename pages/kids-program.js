@@ -40,6 +40,9 @@ export default function KidsProgram() {
                 </div>
               </div>
               <div className="sm:w-2/3 p-4 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 sm:text-left">
+              <h1 className="sm:text-3xl text-2xl font-regular mb-4 text-gray-900">
+                About our Kid's Program
+              </h1>
                 <p className="leading-relaxed text-lg mb-4">
                   Our kids program caters to 3 different age groups. 5-7 years
                   old, 8-11 and finally our Teens Class from 11-15. Led by
