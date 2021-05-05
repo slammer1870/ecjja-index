@@ -89,54 +89,134 @@ export default function AdultsProgram() {
                 About our Adult's Program
               </h1>
               <p className="lg:w-2/3 mx-auto">
-                Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-                gentrify, subway tile poke farm-to-table. Franzen you probably
-                haven't heard of them man bun deep jianbing selfies heirloom
-                prism food truck ugh squid celiac humblebrag.
+                ECJJA is not your typical Jiu Jitsu academy. Here our mission is
+                to provide you or your child with world-class Jiu Jitsu
+                instruction. We pride ourselves on an environment that is warm
+                and welcoming to everyone. Wether your goals are to compete and
+                win a world title or simply get fit and fall in love with a new
+                hobby, we can help you reach them. Our members come from all
+                walks of life ranging between 5 and 65.
               </p>
             </div>
             <div className="flex flex-wrap">
               <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
                 <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
-                  Shooting Stars
+                  Beginner's Course
                 </h2>
                 <p className="leading-relaxed text-base mb-4">
-                  Fingerstache flexitarian street art 8-bit waistcoat.
-                  Distillery hexagon disrupt edison bulbche.
+                  Begin your Jiu Jitsu journey in our renowned Beginner's
+                  Classes. Get to grips with the basics in a class designed
+                  specifically for people new to the sport.
                 </p>
               </div>
               <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
                 <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
-                  The Catalyzer
+                  Mixed Levels Classes
                 </h2>
                 <p className="text-base mb-4">
-                  Fingerstache flexitarian street art 8-bit waistcoat.
-                  Distillery hexagon disrupt edison bulbche.
+                  Our Mixed Levels classes are where you will head after our
+                  Beginners Program. Expand your technical knowledge and
+                  physical abilities while you progress through the belt ranks.
+                  <br />
+                  <br />
+                  Train alongside European and World Champions!
                 </p>
               </div>
               <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
                 <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
-                  Neptune
+                  Nogi Classes
                 </h2>
                 <p className="leading-relaxed text-base mb-4">
-                  Fingerstache flexitarian street art 8-bit waistcoat.
-                  Distillery hexagon disrupt edison bulbche.
+                  Jiu Jitsu can be practiced with the Kimono (Gi) and without
+                  (NoGi). A faster paced version of Jiu Jitsu with some
+                  different techniques in play, we have classes specifically for
+                  Nogi training.
                 </p>
               </div>
               <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
                 <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
-                  Melanchole
+                  Open Mat
                 </h2>
                 <p className="leading-relaxed text-base mb-4">
-                  Fingerstache flexitarian street art 8-bit waistcoat.
-                  Distillery hexagon disrupt edison bulbche.
+                  Open mat is one of our members favourite times in the week.
+                  Every Saturday and Sunday from 1-3pm the mat is free for all
+                  students to use as they wish.
+                  <br />
+                  <br />
+                  Practice some techniques you learned during the week, do some
+                  sparring, or just chill and hang out! Always a good vibe and a
+                  packed mat.
                 </p>
               </div>
             </div>
           </div>
         </section>
+        <section className="text-gray-600 body-font">
+          <div className="container px-4 pt-6 pb-6 mx-auto">
+            <div className="text-center mb-20">
+              <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+                Some information about our memberships
+              </h1>
+              <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
+                Remember we said ECJJA is not your typical Jiu Jitsu academy?
+                Heres some reasons why.
+              </p>
+            </div>
+            <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+              <div className="p-4 lg:w-1/4 flex flex-col items-center">
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                    No sign up fees
+                  </h2>
+                  <p className="leading-relaxed text-base">
+                    Enrol in a Beginners Course or make a monthly membership.
+                    Simple. No extra fees or charges.
+                  </p>
+                </div>
+              </div>
+              <div className="p-4 lg:w-1/4 flex flex-col items-center">
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                    ECJJA Online
+                  </h2>
+                  <p className="leading-relaxed text-base">
+                    As part of this very site we have an online learning
+                    platform that you will gain access to with your membership
+                    for no extra cost. Review techniques from or expand your
+                    learning from home.
+                  </p>
+                </div>
+              </div>
+              <div className="p-4 lg:w-1/4 flex flex-col items-center">
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                    No uniform policies
+                  </h2>
+                  <p className="leading-relaxed text-base">
+                    Many Jiu Jitsu academies force students to wear a particular
+                    colour uniform or specific patches. Here you can wear what
+                    you gi like.
+                  </p>
+                </div>
+              </div>
+              <div className="p-4 lg:w-1/4 flex flex-col items-center">
+                <div className="flex-grow">
+                  <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                    No dated traditions
+                  </h2>
+                  <p className="leading-relaxed text-base">
+                    Here you will not be made bow to picture, line up in order
+                    of rank or be told who you can and cannot train with. We
+                    focus on the things that really matter, like your progress
+                    and enjoyment!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <Form />
-        <section className="py-12 px-4 md:px-0">
+        <section className="pb-24 px-4 md:px-0">
           <h1 class="text-3xl font-regular title-font text-gray-900 mb-12 text-center">
             What others have had to say
           </h1>

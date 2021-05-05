@@ -18,10 +18,11 @@ const About = () => (
             Who we are
           </h3>
           <div className="w-10/12 h-full bg-gray-200 p-5 lg:h-full">
-            <div className="w-10/12 font-light lg:pr-2 2xl:pr-4">
+            <div className="w-10/12 font-light lg:pr-8 2xl:pr-5">
               <p className="mb-8 md:text-xs md:mb-4 lg:text-base lg:mb-10 xl:text-lg">
-                We are a team of professional athletes led by Brazilian Jiu
-                Jitsu Black Belt, Darragh O’Conaill.
+                We are Ireland's most successful Jiu Jitsu Academy. We cater to
+                all ages and skill levels, led by 2nd Degree Black Belt Darragh O
+                Conaill.
               </p>
               <p className="md:text-xs lg:text-base xl:text-lg">
                 ECJJA is home to some of the best BJJ Athletes in Europe,

@@ -5,8 +5,8 @@ export default function KidsProgram() {
   return (
     <div>
       <section>
-        <div className="container px-4 md:px-0 py-12 mx-auto flex flex-col">
-          <h1 className="text-5xl font-light tracking-wider uppercase md:mb-8 md:text-3xl lg:text-5xl mb-12 md:text-center">
+        <div className="container py-12 mx-auto flex flex-col">
+          <h1 className="text-5xl px-4 md:px-0 font-light tracking-wider uppercase md:mb-8 md:text-3xl lg:text-5xl mb-12 md:text-center">
             Kid's Program
           </h1>
           <div className="lg:w-4/6 mx-auto">
@@ -39,17 +39,71 @@ export default function KidsProgram() {
                   </p>
                 </div>
               </div>
-              <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+              <div className="sm:w-2/3 p-4 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 sm:text-left">
                 <p className="leading-relaxed text-lg mb-4">
-                  Meggings portland fingerstache lyft, post-ironic fixie man bun
-                  banh mi umami everyday carry hexagon locavore direct trade art
-                  party. Locavore small batch listicle gastropub farm-to-table
-                  lumbersexual salvia messenger bag. Coloring book flannel
-                  truffaut craft beer drinking vinegar sartorial, disrupt
-                  fashion axe normcore meh butcher. Portland 90's scenester
-                  vexillologist forage post-ironic asymmetrical, chartreuse
-                  disrupt butcher paleo intelligentsia pabst before they sold
-                  out four loko. 3 wolf moon brooklyn.
+                  Our kids program caters to 3 different age groups. 5-7 years
+                  old, 8-11 and finally our Teens Class from 11-15. Led by
+                  European Champion Marcus Phelan, our Kids programs will
+                  develop numerous qualities in your child. Their fitness,
+                  ability to defend themselves, their confidence, balance and
+                  coordination and much more. Jiu Jitsu is a fantastic
+                  alternative to the standard team based sports offered in
+                  schools. Your child will learn from one of the best Jiu Jitsu
+                  athletes in the country in a fun, safe and professional
+                  environment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="text-gray-600 body-font">
+        <div className="container px-4 pb-24 mx-auto">
+          <div className="text-center mb-20">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+              Our class option
+            </h1>
+            <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
+              We cater for a range of age groups.
+            </p>
+          </div>
+          <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+            <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
+              <div className="flex-grow">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                  5-7 Years old
+                </h2>
+                <p className="leading-relaxed text-base">
+                  The objective of this class is fun. Marcus has designed plenty
+                  of games, coordination drills and grappling basics to keep the
+                  kids focused, engaged and enjoying themselves!
+                </p>
+              </div>
+            </div>
+            <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
+              <div className="flex-grow">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                  8-11 Years old
+                </h2>
+                <p className="leading-relaxed text-base">
+                  Still using fun and games, the goal of this class is to
+                  develop further your childs motor skills and build some
+                  strength and fitness. This age group focuses on building good,
+                  safe grappling skills that will carry them through to the Teen
+                  and adult age groups.
+                </p>
+              </div>
+            </div>
+            <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
+              <div className="flex-grow">
+                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                  11-15 Teens Class
+                </h2>
+                <p className="leading-relaxed text-base">
+                  tructured much more similarly to an adults class. Our Teens
+                  Class has multiple elements from fitness, strength and
+                  gymnastic based warm ups, to clear and concise technical
+                  instruction and controlled sparring to finish.
                 </p>
               </div>
             </div>
@@ -118,7 +172,7 @@ export default function KidsProgram() {
                 </div>
               </div>
               <div className="p-2 w-full">
-                <button className="flex mx-auto text-white bg-blue-400 border-0 py-2 px-8 focus:outline-none hover:bg-blue-500 text-lg">
+                <button className="flex justify-center items-center w-full mx-auto text-white text-center bg-blue-400 border-0 py-2 px-8 focus:outline-none hover:bg-blue-500 text-lg">
                   Submit
                 </button>
               </div>
