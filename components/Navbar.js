@@ -24,7 +24,7 @@ const Navbar = () => {
     <nav className="px-4 py-2 w-screen flex justify-between items-center md:px-20 lg:px-40 fixed bg-white z-10">
       <logo className="w-1/4">
         <Link href="/">
-          <div className="w-9 h-9 md:h-11 md:w-11 lg:h-14 lg:w-14" onClick={handleOpen}>
+          <div className="w-9 h-9 md:h-11 md:w-11 lg:h-14 lg:w-14" onClick={handleDropdown}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               
