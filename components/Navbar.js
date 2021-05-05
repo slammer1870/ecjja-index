@@ -8,7 +8,10 @@ const Navbar = () => {
   const handleOpen = () => {
     if (open) {
       setOpen(false);
-    } else setOpen(true);
+      setDropdown(false);
+    } else {
+      setOpen(true)
+      setDropdown(false)};
   };
 
   const handleDropdown = () => {
