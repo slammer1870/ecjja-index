@@ -44,7 +44,7 @@ const Footer = () => (
             xmlns="http://www.w3.org/2000/svg"
             width="14"
             height="17.597"
-            viewBox="0 0 10.791 14.388"
+            viewBox="0 0 10.791 17"
           >
             <path
               id="map-marker-alt-solid"
