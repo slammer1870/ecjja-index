@@ -17,7 +17,7 @@ const About = () => (
           <h3 className="text-5xl mb-8 font-light text-left md:mb-4 md:text-3xl xl:text-5xl xl:mb-10">
             Who we are
           </h3>
-          <div className="w-10/12 h-full bg-gray-200 p-5 lg:h-full">
+          <div className="w-10/12 h-full bg-gray-100 p-5 lg:h-full">
             <div className="w-10/12 font-light lg:pr-8 2xl:pr-5">
               <p className="mb-8 md:text-xs md:mb-4 lg:text-base lg:mb-10 xl:text-lg">
                 We are Ireland's most successful Jiu Jitsu Academy. We cater to
@@ -49,7 +49,7 @@ const About = () => (
             <p className="mb-8 md:mb-4">
               Upon beginning training with us you will start in our beginner’s
               program. Here you will learn the basic techniques and strategies
-              of grappling
+              of grappling.
             </p>
             <p>
               As you progress in your journey you will move on to our
