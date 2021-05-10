@@ -894,7 +894,7 @@ const Navbar = () => {
             open ? "" : "hidden"
           } w-5/12 h-screen flex bg-white z-30 right-0 top-0 fixed items-start md:flex md:flex-row md:w-full md:bg-transparent md:h-auto md:relative md:py-0 md:items-center`}
         >
-          <ul className="mt-20 flex flex-col text-sm md:mt-0 md:px-0 md:text-base md:flex md:flex-row md:w-full md:bg-transparent md:h-auto md:relative md:py-0 justify-between md:items-center font-light">
+          <ul className="mt-20 flex flex-col text-sm md:mt-0 md:px-0 md:text-base md:flex md:flex-row md:w-full md:bg-transparent md:h-auto md:relative md:py-0 md:justify-between md:items-center font-light">
             <li className="flex flex-col" onClick={handleDropdown}>
               <div className="flex items-center ml-4">
                 <svg
@@ -928,7 +928,7 @@ const Navbar = () => {
               <ul
                 className={`${
                   dropdown
-                    ? "flex flex-col fixed bg-white px-2 mt-5 ml-6 md:mt-8 md:bg-white"
+                    ? "flex flex-col md:fixed bg-white mt-1 ml-7 md:mt-8 md:bg-white"
                     : "hidden"
                 }`}
               >
@@ -952,7 +952,7 @@ const Navbar = () => {
             </li>
             <Link href="/timetable">
               <li
-                className="ml-9 mt-16 md:mt-0 md:ml-0 hover:underline"
+                className="ml-9 mt-4 md:mt-0 md:ml-0 hover:underline"
                 onClick={handleOpen}
               >
                 Timetable
@@ -960,7 +960,7 @@ const Navbar = () => {
             </Link>
             <Link href="/ecjja-online">
               <li
-                className="ml-9 mt-16 md:mt-0 md:ml-0 hover:underline"
+                className="ml-9 mt-4 md:mt-0 md:ml-0 hover:underline"
                 onClick={handleOpen}
               >
                 ECJJA Online
@@ -968,7 +968,7 @@ const Navbar = () => {
             </Link>
             <Link href="/contact">
               <li
-                className="ml-9 mt-16 md:mt-0 md:ml-0 bg-gray-400 px-2 py-1 text-white hover:underline"
+                className="ml-9 mt-4 md:mt-0 md:ml-0 bg-gray-400 px-2 py-1 text-white text-center w-24 md:w-auto hover:underline"
                 onClick={handleOpen}
               >
                 Contact Us

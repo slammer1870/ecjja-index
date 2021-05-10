@@ -4,16 +4,6 @@ import Image from "next/image";
 import Form from "../components/Form";
 
 export default function AdultsProgram() {
-  const [video, setVideo] = useState();
-
-  const handleVideo = () => {
-    if (!video) {
-      setVideo(true);
-    } else {
-      setVideo(false);
-    }
-  };
-
   return (
     <div>
       <main>
@@ -23,64 +13,26 @@ export default function AdultsProgram() {
               Adult's Program
             </h1>
           </div>
-          <div className="max-w-screen-md mx-auto" onClick={handleVideo}>
+          <div className="max-w-screen-md mx-auto">
             <div className="bg-video bg-cover aspect-w-16 aspect-h-9">
               <Image
                 src="/videoscreenshot.png"
                 layout="fill"
                 objectFit="cover"
               />
-              <div className="bg-black w-full h-full bg-opacity-50 flex justify-center items-center mx-auto">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="178"
-                  height="45"
-                  viewBox="0 0 178 45"
+              <div className="w-full h-full bg-black opacity-40 flex justify-center items-center">
+                <a
+                  href="#signup"
+                  className="text-white border py-2 px-4 uppercase"
                 >
-                  <circle
-                    id="Ellipse_1"
-                    data-name="Ellipse 1"
-                    cx="22.5"
-                    cy="22.5"
-                    r="22.5"
-                    fill="#bcbcbc"
-                  />
-                  <rect
-                    id="Rectangle_3"
-                    data-name="Rectangle 3"
-                    width="154"
-                    height="29"
-                    rx="10"
-                    transform="translate(24 9)"
-                    fill="#bcbcbc"
-                  />
-                  <path
-                    id="Polygon_1"
-                    data-name="Polygon 1"
-                    d="M7.928,0l7.928,14.636H0Z"
-                    transform="translate(32.845 15.739) rotate(90)"
-                    fill="#f4f1f7"
-                  />
-                  <text
-                    id="Watch_the_video_2_minutes_"
-                    data-name="Watch the video (2 minutes)"
-                    transform="translate(45 18)"
-                    fill="#f4f1f7"
-                    font-size="10"
-                    font-family="HelveticaNeue-Light, Helvetica Neue"
-                    font-weight="300"
-                  >
-                    <tspan x="0" y="8">
-                      Watch the video (2 minutes)
-                    </tspan>
-                  </text>
-                </svg>
+                  Join Now
+                </a>
               </div>
             </div>
           </div>
         </section>
         <section>
-          <div className="container px-4 py-12 mx-auto">
+          <div className="container px-4 pt-12 mx-auto">
             <div className="flex flex-col text-center w-full mb-20">
               <h2 className="text-xs text-indigo-500 tracking-widest font-medium  mb-1">
                 EAST COAST JIU JITSU ACADEMY
@@ -151,7 +103,8 @@ export default function AdultsProgram() {
             </div>
           </div>
         </section>
-        <section className="text-gray-600 body-font">
+        <Form />
+        <section className="text-gray-600 body-font mb-24">
           <div className="container px-4 pt-6 pb-6 mx-auto">
             <div className="text-center mb-20">
               <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
@@ -215,7 +168,6 @@ export default function AdultsProgram() {
             </div>
           </div>
         </section>
-        <Form />
         <section className="pb-24 px-4 md:px-0">
           <h1 class="text-3xl font-regular title-font text-gray-900 mb-12 text-center">
             What others have had to say
@@ -282,24 +234,6 @@ export default function AdultsProgram() {
           </div>
         </section>
       </main>
-      {video && (
-        <div className="flex p-4 top-0 left-0 w-screen h-screen fixed bg-black bg-opacity-90 z-10 ">
-          <button
-            className="w-screen h-screen absolute"
-            onClick={handleVideo}
-          ></button>
-          <div className="w-full max-w-screen-md bg-white md:p-0 mx-auto my-auto z-20 relative">
-            <div class="aspect-w-16 aspect-h-9 mx-auto max-w-screen-md opacity-100">
-              <iframe
-                src="https://www.youtube.com/embed/Vzo8tv2B4nU"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

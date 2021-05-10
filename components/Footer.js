@@ -57,8 +57,8 @@ const Footer = () => {
         </div>
         <div>
         {message
-          ? message
-          : `I'll only send emails when new content is posted. No spam.`}
+          ? <p className="mt-3 text-sm text-white">{message}</p>
+          :<p className="mt-3 text-sm text-white">We'll only send emails when new content is posted. No spam.</p>}
       </div>
         <p className="text-sm text-white mt-3">© 2021 ECJJA</p>
       </form>

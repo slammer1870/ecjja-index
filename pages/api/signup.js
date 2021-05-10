@@ -13,7 +13,7 @@ export default async (req, res) => {
   }
 
   try {
-    await mailchimp.lists.addListMember(process.env.NEWSLETTER_AUDIENCE_ID, {
+    await mailchimp.lists.addListMember(process.env.SIGNUP_AUDIENCE_ID, {
       email_address: email,
       status: 'subscribed'
     });
