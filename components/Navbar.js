@@ -892,7 +892,7 @@ const Navbar = () => {
         <div
           className={`${
             open ? "" : "hidden"
-          } w-5/12 h-screen flex bg-white z-30 right-0 top-0 fixed items-start md:flex md:flex-row md:w-full md:bg-transparent md:h-auto md:relative md:py-0 md:items-center`}
+          } w-1/2 h-screen flex bg-white z-30 right-0 top-0 fixed items-start md:flex md:flex-row md:w-full md:bg-transparent md:h-auto md:relative md:py-0 md:items-center`}
         >
           <ul className="mt-20 flex flex-col text-sm md:mt-0 md:px-0 md:text-base md:flex md:flex-row md:w-full md:bg-transparent md:h-auto md:relative md:py-0 md:justify-between md:items-center font-light">
             <li className="flex flex-col" onClick={handleDropdown}>
@@ -928,7 +928,7 @@ const Navbar = () => {
               <ul
                 className={`${
                   dropdown
-                    ? "flex flex-col md:fixed bg-white mt-1 ml-7 md:mt-8 md:bg-white"
+                    ? "flex flex-col md:fixed md:pr-3 bg-white mt-1 ml-7 md:mt-8 md:bg-white"
                     : "hidden"
                 }`}
               >

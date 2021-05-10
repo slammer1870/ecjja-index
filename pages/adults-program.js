@@ -21,12 +21,7 @@ export default function AdultsProgram() {
                 objectFit="cover"
               />
               <div className="w-full h-full bg-black opacity-40 flex justify-center items-center">
-                <a
-                  href="#signup"
-                  className="text-white border py-2 px-4 uppercase"
-                >
-                  Join Now
-                </a>
+                
               </div>
             </div>
           </div>

@@ -9,8 +9,11 @@
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.41",
+    "@sendgrid/mail": "^7.4.4",
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "next": "^10.2.0",
+    "nodemailer": "^6.6.0",
+    "nodemailer-sendgrid-transport": "^0.2.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-instagram-authless-feed": "github:jamesmoriarty/react-instagram-authless-feed"

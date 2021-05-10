@@ -1,6 +1,39 @@
-import React from "react"
+import React, { useState } from "react"
 
 export default function Contact() {
+  
+  const [message, setMessage] = useState("");
+  
+  const contact = async (e) => {
+    e.preventDefault();
+
+    // 3. Send a request to our API with the user's email address.
+    const res = await fetch("/api/contact", {
+      body: JSON.stringify({
+        email: e.target.email.value,
+        name: e.target.name.value,
+        text: e.target.message.value
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+    });
+
+    const { error } = await res.json();
+
+    if (error) {
+      // 4. If there was an error, update the message in state.
+      setMessage(error);
+
+      return;
+    }
+
+    // 5. Clear the input value and show a success message.
+    e.target.message.value = "THANKS";
+    setMessage("Success! 🎉 You are now subscribed to the newsletter.");
+  };
+  
   return (
     <div>
       <section className="text-gray-600 pt-12 pb-24 px-4 md:px-0 relative">
@@ -42,7 +75,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+          <form onSubmit={contact} className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
             <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
               Get in touch
             </h2>
@@ -88,10 +121,10 @@ export default function Contact() {
                 defaultValue={""}
               />
             </div>
-            <button className="text-white bg-blue-400 border-0 py-2 px-6 focus:outline-none hover:bg-blue-500 text-lg">
+            <button type="submit" className="text-white bg-blue-400 border-0 py-2 px-6 focus:outline-none hover:bg-blue-500 text-lg">
               Submit
             </button>
-          </div>
+          </form>
         </div>
       </section>
     </div>
