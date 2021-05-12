@@ -10,15 +10,15 @@ export default function KidsProgram() {
             Kid's Program
           </h1>
           <div className="lg:w-4/6 mx-auto">
-            <div className="h-auto overflow-hidden">
+            <div className="max-w-screen-md mx-auto">
+            <div className="aspect-w-16 aspect-h-9">
               <Image
                 src="/kids1.jpeg"
-                width={1080}
-                height={720}
+                layout="fill"
                 objectFit="cover"
                 objectPosition="center"
               />
-            </div>
+            </div></div>
             <div className="flex flex-col sm:flex-row mt-10">
               <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8 z-0">
                 <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
@@ -40,7 +40,7 @@ export default function KidsProgram() {
                 </div>
               </div>
               <div className="sm:w-2/3 p-4 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 sm:text-left">
-              <h1 className="sm:text-3xl text-2xl font-regular mb-4 text-gray-900">
+              <h1 className="text-3xl font-regular mb-4 text-gray-900">
                 About our Kid's Program
               </h1>
                 <p className="leading-relaxed text-lg mb-4">
@@ -71,7 +71,7 @@ export default function KidsProgram() {
             </p>
           </div>
           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-            <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
+            <div className="p-4 md:w-1/3 flex flex-col items-center">
               <div className="flex-grow">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
                   5-7 Years old
@@ -83,7 +83,7 @@ export default function KidsProgram() {
                 </p>
               </div>
             </div>
-            <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
+            <div className="p-4 md:w-1/3 flex flex-col items-center">
               <div className="flex-grow">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
                   8-11 Years old
@@ -97,10 +97,10 @@ export default function KidsProgram() {
                 </p>
               </div>
             </div>
-            <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
+            <div className="p-4 md:w-1/3 flex flex-col items-center">
               <div className="flex-grow">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                  11-15 Teens Class
+                  12-15 Teens Class
                 </h2>
                 <p className="leading-relaxed text-base">
                   tructured much more similarly to an adults class. Our Teens

@@ -62,6 +62,7 @@ const Form = () => {
               id="name"
               name="name"
               className="w-full bg-white border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              required
             />
           </div>
           <div className="relative mb-4">
@@ -73,6 +74,7 @@ const Form = () => {
               id="email"
               name="email"
               className="w-full bg-white border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              required
             />
           </div>
           <div className="relative mb-4">
@@ -81,7 +83,8 @@ const Form = () => {
               id="gdpr"
               name="gdpr"
               className="mr-2"
-            ></input>
+              required
+            />
             <label className="text-xs text-gray-500 mt-3" for="gdpr">
               I consent to ECJJA's{" "}
               <span className="underline">terms of service</span>

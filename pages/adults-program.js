@@ -28,14 +28,14 @@ export default function AdultsProgram() {
         </section>
         <section>
           <div className="container px-4 pt-12 mx-auto">
-            <div className="flex flex-col text-center w-full mb-20">
+            <div className="flex flex-col md:text-center w-full mb-20">
               <h2 className="text-xs text-indigo-500 tracking-widest font-medium  mb-1">
                 EAST COAST JIU JITSU ACADEMY
               </h2>
-              <h1 className="sm:text-3xl text-2xl font-regular mb-4 text-gray-900">
+              <h1 className="text-3xl font-regular mb-4 text-gray-900">
                 About our Adult's Program
               </h1>
-              <p className="lg:w-2/3 mx-auto">
+              <p className="lg:w-2/3 mx-auto md:text-lg">
                 ECJJA is not your typical Jiu Jitsu academy. Here our mission is
                 to provide you or your child with world-class Jiu Jitsu
                 instruction. We pride ourselves on an environment that is warm
@@ -101,8 +101,8 @@ export default function AdultsProgram() {
         <Form />
         <section className="text-gray-600 body-font mb-24">
           <div className="container px-4 pt-6 pb-6 mx-auto">
-            <div className="text-center mb-20">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+            <div className="md:text-center mb-20">
+              <h1 className="text-2xl md:text-3xl font-medium title-font text-gray-900 mb-4">
                 Some information about our memberships
               </h1>
               <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
@@ -164,7 +164,7 @@ export default function AdultsProgram() {
           </div>
         </section>
         <section className="pb-24 px-4 md:px-0">
-          <h1 class="text-3xl font-regular title-font text-gray-900 mb-12 text-center">
+          <h1 class="text-3xl md:text-4xl font-regular title-font text-gray-900 mb-12 md:text-center">
             What others have had to say
           </h1>
           <div className="flex flex-wrap justify-around ">

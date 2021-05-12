@@ -6,7 +6,7 @@ export default function Timetable() {
       <section className="text-gray-600 body-font">
         <div className="container px-4 py-12 mx-auto">
           <div className="flex flex-col text-center w-full mb-10">
-            <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">
+          <h1 className="text-5xl px-4 md:px-0 font-light tracking-wider uppercase text-center text-gray-900">
               Timetable
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
