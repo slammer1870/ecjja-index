@@ -16,7 +16,7 @@ export default function AdultsProgram() {
           <div className="max-w-screen-md mx-auto">
             <div className="bg-video bg-cover aspect-w-16 aspect-h-9">
               <Image
-                src="/videoscreenshot.png"
+                src="/adults.jpg"
                 layout="fill"
                 objectFit="cover"
               />
