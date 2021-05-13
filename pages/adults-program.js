@@ -19,10 +19,7 @@ export default function AdultsProgram() {
                 src="/adults.jpg"
                 layout="fill"
                 objectFit="cover"
-              />
-              <div className="w-full h-full bg-black opacity-40 flex justify-center items-center">
-                
-              </div>
+              />                
             </div>
           </div>
         </section>
