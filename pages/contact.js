@@ -57,7 +57,7 @@ export default function Contact() {
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                   ADDRESS
                 </h2>
-                <a href="https://goo.gl/maps/74fVByAUM7cYUFzx6" className="mt-1 text-blue-500">
+                <a href="https://goo.gl/maps/74fVByAUM7cYUFzx6" className="mt-1 text-blue-500" target="_blank">
                 Mounttown Industrial Estate, Mounttown Lower, Glenageary, Monkstown, Co. Dublin
                 </a>
               </div>
@@ -65,7 +65,7 @@ export default function Contact() {
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                   EMAIL
                 </h2>
-                <a href="mailto:info@ecjja.com"className="text-blue-500 leading-relaxed">
+                <a href="mailto:info@ecjja.com"className="text-blue-500 leading-relaxed" target="_blank">
                   info@ecjja.com
                 </a>
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
