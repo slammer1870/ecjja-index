@@ -33,7 +33,7 @@ const Form = () => {
   };
   return (
     <section className="text-gray-600 body-font" id="signup">
-      <div className="container px-4 py-16 mx-auto flex flex-wrap items-center md:px-0">
+      <div className="container px-4 my-16 mx-auto flex flex-wrap items-center md:px-0">
         <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
           <h1 className="title-font font-medium text-3xl text-gray-900">
             Ready to get started?{" "}

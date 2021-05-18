@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = () => (
   <content>
-    <section className="px-4 py-12 md:px-0">
+    <section className="px-4 pt-20 pb-12 md:px-0">
       <div className="md:flex md:justify-between">
         <div className="hidden md:block aspect-w-16 aspect-h-9 md:w-6/12 md:pb-56 lg:pb-96 ">
           <Image
@@ -101,11 +101,19 @@ const About = () => (
               &nbsp; no prior experience or level of fitness to get started.
             </span>
           </p>
-          <p className="md:text-sm lg:text-base xl:text-lg">
+          <p className="mb-8 md:text-sm lg:text-base xl:text-lg">
             Our beginner’s program runs in cycles which mean that every group
             starts at the same time, from the same place. You will be in a group
             of people with the exact same level of experience as you!
           </p>
+          <div className="md:hidden aspect-w-16 aspect-h-9 md:mb-0 md:w-6/12 md:pb-56 lg:pb-96 ">
+          <Image
+            src="/lineup.jpg"
+            alt="Darragh"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
         </div>
       </div>
     </section>

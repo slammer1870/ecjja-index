@@ -3,8 +3,8 @@ import Link from "next/link"
 
 const Features = () => (
   <section className="text-gray-600 body-font">
-    <div className="container px-5 pt-12 pb-24 mx-auto">
-      <h1 className="text-3xl md:text-4xl font-medium md:text-center text-gray-900 mb-20">
+    <div className="container px-5 pt-6 pb-24 mx-auto">
+      <h1 className="text-3xl md:text-4xl font-medium md:text-center text-gray-900 mb-12">
         Our program options
       </h1>
       <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
