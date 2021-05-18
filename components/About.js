@@ -15,7 +15,7 @@ const About = () => (
         </div>
         <card className="flex flex-col relative md:w-5/12 lg:w-1/2 lg:pl-14 xl:pl-32">
           <h3 className="text-5xl mb-8 font-light text-left md:mb-4 md:text-3xl xl:text-5xl xl:mb-10">
-            Who we are
+            Who are we?
           </h3>
           <div className="w-10/12 h-full bg-gray-100 p-5 lg:h-full">
             <div className="w-10/12 font-light lg:pr-8 2xl:pr-5">
@@ -40,7 +40,7 @@ const About = () => (
       <div className="md:flex md:justify-between">
         <div className="md:w-5/12">
           <h3 className="text-5xl mb-8 font-light md:text-3xl md:mb-4 xl:text-5xl xl:mb-10">
-            What you will learn
+            What will you learn?
           </h3>
           <p className="mb-8 md:text-sm md:mb-4 lg:text-base xl:text-lg">
             Our mission is to teach you the Art of Brazilian Jiu Jitsu.
