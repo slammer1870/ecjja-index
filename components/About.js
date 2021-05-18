@@ -7,7 +7,7 @@ const About = () => (
       <div className="md:flex md:justify-between">
         <div className="hidden md:block aspect-w-16 aspect-h-9 md:w-6/12 md:pb-56 lg:pb-96 ">
           <Image
-            src="/teaching.jpeg"
+            src="/attention.jpg"
             alt="Darragh"
             layout="fill"
             objectFit="cover"
@@ -59,7 +59,7 @@ const About = () => (
         </div>
         <div className="aspect-w-16 aspect-h-9 mb-8 md:mb-0 md:w-6/12 md:pb-56 lg:pb-96 ">
           <Image
-            src="/teaching1.jpeg"
+            src="/learn.jpg"
             alt="Darragh"
             layout="fill"
             objectFit="cover"

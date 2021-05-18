@@ -14,17 +14,21 @@ export const Hero = () => {
 
   return (
     <div className="md:flex md:py-36 md:justify-between">
-      <div className="p-4 mb-8 md:w-1/2 md:p-0 md:pr-2 xl:pr-6">
-        <h1 className="text-5xl font-light tracking-wider uppercase md:mb-8 md:text-3xl lg:text-5xl">
+      <div className="p-4 mb-4 md:mb-8 md:w-1/2 md:p-0 md:pr-2 xl:pr-6">
+        <h1 className="text-4xl font-light tracking-wider uppercase md:mb-2 lg:mb-6 md:text-xl lg:text-5xl">
           East Coast Jiu Jitsu Academy
         </h1>
         <div className="hidden md:block">
-          <h3 className="text-4xl font-thin md:mb-8 md:text-xl lg:text-4xl">
-            Brazilian Jiu Jitsu in South Dublin
+          <h3 className="text-3xl font-light text-gray-900 md:mb-2 lg:mb-6 md:text-base lg:text-3xl">
+            The best way to learn something is to immerse yourself in it.
           </h3>
+          <h4 className="text-2xl font-light text-gray-600 md:mb-4 lg:mb-12 md:text-sm lg:text-2xl">
+            Enroll in our Beginner's Program and start alongside others new to
+            the sport. Start getting fit and having fun today!
+          </h4>
           <a
             href="#signup"
-            className="text-2xl border py-2 px-8 uppercase md:text-sm lg:text-xl"
+            className="text-2xl border md:py-1 md:px-5 lg:py-2 lg:px-8 uppercase md:text-sm lg:text-xl"
           >
             Join Now
           </a>
@@ -37,11 +41,7 @@ export const Hero = () => {
         <Image src="/academypic.jpeg" layout="fill" objectFit="cover" />
         <div className="bg-black w-full h-full bg-opacity-50 flex justify-center items-center mx-auto">
           <div className="w-48 h-auto xl:w-56">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-  
-              viewBox="0 0 178 45"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178 45">
               <circle
                 id="Ellipse_1"
                 data-name="Ellipse 1"
@@ -83,13 +83,23 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="p-4 mt-8 md:hidden">
-        <h3 className="text-4xl font-thin">
-          Brazilian Jiu Jitsu in South Dublin
+      <div className="p-4 mt-4 md:mt-8 md:hidden">
+        <h3 className="text-2xl font-light text-gray-900 mb-4">
+          The best way to learn something is to immerse yourself in it.
         </h3>
+        <h4 className="text-xl font-light text-gray-600 mb-4">
+          Enroll in our Beginner's Program and start alongside others new to the
+          sport. Start getting fit and having fun today!
+        </h4>
+        <a
+            href="#signup"
+            className="text-xl bg-blue-400 py-2 text-white w-full block text-center"
+          >
+            Get me started
+          </a>
       </div>
       {video && (
-        <div className="flex p-4 top-0 left-0 w-screen h-screen fixed bg-black bg-opacity-90 z-10 ">
+        <div className="flex p-4 top-0 left-0 w-full h-full fixed bg-black bg-opacity-90 z-10 ">
           <button
             className="w-screen h-screen absolute"
             onClick={handleVideo}

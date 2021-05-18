@@ -9,58 +9,71 @@ const Testimonials = () => {
         <card className="flex flex-col mx-auto bg-white z-0 md:w-6/12 md:mr-7 lg:3/12 xl:mr-12">
           <div className="flex justify-center">
             <Image
-              src="/testimonial1.png"
+              src="/dave.png"
               width={120}
               height={120}
               className="rounded-full z-10"
             />
           </div>
-          <div className="bg-gray-100 p-6 -mt-16 min-h-full h-96 relative">
-            <h3 className="text-2xl font-thin pt-20">
-              “Training at ECJJA is a good buzz and I enjoy it a lot. OSS”
+          <div className="bg-gray-100 p-6 -mt-16 min-h-full relative flex flex-col justify-between">
+            <h3 className="text-xl font-thin pt-20 h-76">
+              “When I was looking to take up Jiu-Jitsu I wanted it all, great
+              facilities, great teammates and most of all an instructor that
+              genuinely cared about the development of his students. Thankfully
+              I found all of that in ECJJA and haven’t looked back since!”
             </h3>
-            <div className="bottom-0 absolute">
-              <h3 className="text-2xl font-bold my-4">Sam Mc Nally</h3>
-              <h3 className="text-2xl font-light my-4">Web Developer</h3>
+            <div className="">
+              <h3 className="text-xl font-bold mb-4">David Phelan</h3>
+              <h3 className="text-xl font-light">Recruitment Consultant</h3>
             </div>
           </div>
         </card>
         <card className="hidden md:block flex flex-col bg-white z-0 md:w-6/12 md:ml-7 lg:3/12 lg:mr-7 xl:mx-12">
-          <div className="flex justify-center ">
+          <div className="flex justify-center">
             <Image
-              src="/testimonial2.png"
+              src="/rioghnach.png"
               width={120}
               height={120}
               className="rounded-full z-10"
             />
           </div>
-          <div className="bg-gray-100 p-6 -mt-16 min-h-full h-96 relative">
-            <h3 className="text-2xl font-thin pt-20">
-              “My Jiu Jitsu has improved a lot training at ECJJA. I love Reverse
-              De La Riva.”
+          <div className="bg-gray-100 p-6 -mt-16 min-h-full relative flex flex-col justify-between">
+            <h3 className="text-xl font-thin pt-20 h-76">
+              “For a person who has never played a sport before, I really feel
+              that with ECJJA I’ve found the right activity and place to do it
+              in. BJJ is a perfect balance as it stimulates you physically and
+              mentally, but also simultaneously provides a social outlet. At
+              ECJJA I’ve always felt that both my coaches and teammates want to
+              see me succeed and thus are constantly helping and pushing me.”
             </h3>
-            <div className="bottom-0 absolute">
-              <h3 className="text-2xl font-bold my-4">Emily Manning</h3>
-              <h3 className="text-2xl font-light my-4">BJJ Purple Belt</h3>
+            <div className="">
+              <h3 className="text-xl font-bold mb-4">Ríoghnach O' Leary</h3>
+              <h3 className="text-xl font-light">Psychologist</h3>
             </div>
           </div>
         </card>
         <card className="hidden lg:block flex flex-col bg-white z-0 md:w-6/12 lg:3/12 lg:ml-7 xl:ml-12">
-          <div className="flex justify-center ">
+          <div className="flex justify-center">
             <Image
-              src="/testimonial3.png"
+              src="/sam.png"
               width={120}
               height={120}
               className="rounded-full z-10"
             />
           </div>
-          <div className="bg-gray-100 p-6 -mt-16 min-h-full h-96 relative">
-            <h3 className="text-2xl font-thin pt-20">
-              “Hit you with those two points boi, don't sleep on me.”
+          <div className="bg-gray-100 p-6 -mt-16 min-h-full relative flex flex-col justify-between">
+            <h3 className="text-xl font-thin pt-20 h-76">
+              “I was lucky enough to choose East Coast Jiu Jitsu Academy to
+              train in when I started BJJ. It has become a driving force in my
+              life, giving me the initiative to achieve and improve. The sport
+              itself is addictive but the atmosphere in the gym and the training
+              partners are what make us a team. Darragh constantly looks to
+              improve himself and his team, always teaching new techniques and
+              keeping a strong focus on self improvement for every individual!”
             </h3>
-            <div className="bottom-0 absolute">
-              <h3 className="text-2xl font-bold my-4">Marcus Phelan</h3>
-              <h3 className="text-2xl font-light my-4">BJJ Black Belt</h3>
+            <div className="">
+              <h3 className="text-xl font-bold mb-4">Sam Mc Nally</h3>
+              <h3 className="text-xl font-light">BJJ Black Belt</h3>
             </div>
           </div>
         </card>
