@@ -159,8 +159,8 @@ export default function AdultsProgram() {
           <h1 class="text-3xl md:text-4xl font-regular title-font text-gray-900 mb-12 md:text-center">
             What others have had to say
           </h1>
-          <div className="flex flex-wrap justify-around ">
-            <card className="w-80 flex flex-col mx-auto md:mx-0 mb-24 bg-white z-0 ">
+          <div className="flex flex-wrap justify-around xl:justify-between">
+            <card className="md:w-72 lg:w-80 flex flex-col mx-auto md:mx-0 mb-24 bg-white z-0 ">
               <div className="flex justify-center">
                 <Image
                   src="/dave.png"
@@ -183,7 +183,7 @@ export default function AdultsProgram() {
                 </div>
               </div>
             </card>
-            <card className="w-80 flex flex-col mx-auto md:mx-0 mb-24 bg-white z-0 ">
+            <card className="md:w-72 lg:w-80 flex flex-col mx-auto md:mx-0 mb-24 bg-white z-0 ">
               <div className="flex justify-center">
                 <Image
                   src="/rioghnach.png"
@@ -208,7 +208,7 @@ export default function AdultsProgram() {
                 </div>
               </div>
             </card>
-            <card className="w-80 flex flex-col mx-auto md:mx-0 mb-24 bg-white z-0 ">
+            <card className="md:w-72 lg:w-80 flex flex-col mx-auto md:mx-0 mb-24 bg-white z-0 ">
               <div className="flex justify-center">
                 <Image
                   src="/sam.png"
