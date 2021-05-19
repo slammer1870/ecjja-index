@@ -39,7 +39,7 @@ const Form = () => {
   return (
     <section className="text-gray-600 body-font" id="signup">
       <div className="container px-4 py-16 mx-auto flex flex-wrap items-center md:px-0">
-        <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+        <div className="xl:w-3/5 md:w-1/2 md:pr-16 xl:pr-0 pr-0">
           <h1 className="title-font font-medium text-3xl text-gray-900">
             Ready to get started?{" "}
             <span className="font-light">
@@ -51,8 +51,8 @@ const Form = () => {
             never be used for anything other than contacting you to get started.
           </p>
         </div>
-        <form onSubmit={signup} className="lg:w-2/6 md:w-1/2 bg-gray-100 p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
-          <h2 className="text-gray-900 text-lg font-medium title-font mb-5">
+        <form onSubmit={signup} className="xl:w-2/6 md:w-1/2 bg-gray-100 p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+          <h2 className="text-gray-900 text-xl font-medium title-font mb-5">
             Sign up with ECJJA
           </h2>
           <div className="relative mb-4">
@@ -95,7 +95,7 @@ const Form = () => {
               <span className="underline">terms of service</span>
             </label>
           </div>
-          <button type="submit" className="text-white bg-blue-400 border-0 py-2 px-8 focus:outline-none hover:bg-blue-500 text-lg">
+          <button type="submit" className="text-white bg-blue-400 border-0 py-2 px-8 focus:outline-none hover:bg-blue-500 text-xl">
           {!message && loading && (
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

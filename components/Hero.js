@@ -15,27 +15,27 @@ export const Hero = () => {
   return (
     <div className="md:flex md:py-36 md:justify-between">
       <div className="p-4 mb-4 md:mb-8 md:w-1/2 md:p-0 md:pr-2 xl:pr-6">
-        <h1 className="text-4xl font-light tracking-wider uppercase md:mb-2 lg:mb-6 md:text-xl lg:text-5xl">
+        <h1 className="text-4xl font-light tracking-wider uppercase md:mb-2 xl:mb-6 md:text-2xl xl:text-5xl">
           East Coast Jiu Jitsu Academy
         </h1>
         <div className="hidden md:block">
-          <h3 className="text-3xl font-light text-gray-900 md:mb-2 lg:mb-6 md:text-base lg:text-3xl">
+          <h3 className="text-3xl font-light text-gray-900 md:mb-2 xl:mb-6 md:text-base xl:text-3xl">
             The best way to learn something is to immerse yourself in it.
           </h3>
-          <h4 className="text-2xl font-light text-gray-600 md:mb-4 lg:mb-12 md:text-sm lg:text-2xl">
+          <h4 className="text-2xl font-light text-gray-600 md:mb-4 xl:mb-12 md:text-sm xl:text-2xl">
             Enroll in our Beginners Program alongside others new to
             the sport. Start getting fit and having fun today!
           </h4>
           <a
             href="#signup"
-            className="text-2xl border md:py-1 md:px-5 lg:py-2 lg:px-8 uppercase md:text-sm lg:text-xl"
+            className="text-2xl border md:py-1 md:px-5 xl:py-2 xl:px-8 uppercase md:text-sm xl:text-xl"
           >
             Join Now
           </a>
         </div>
       </div>
       <div
-        className="aspect-w-16 aspect-h-9 h-1/3 md:w-1/2 md:pb-56 lg:pb-96"
+        className="aspect-w-16 aspect-h-9 h-1/3 md:w-1/2 md:pb-56 xl:pb-96"
         onClick={handleVideo}
       >
         <Image src="/academypic.jpeg" layout="fill" objectFit="cover" />

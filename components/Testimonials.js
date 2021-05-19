@@ -52,7 +52,7 @@ const Testimonials = () => {
             </div>
           </div>
         </card>
-        <card className="hidden lg:block flex flex-col bg-white z-0 md:w-6/12 lg:3/12 lg:ml-7 xl:ml-12">
+        <card className="hidden xl:block flex flex-col bg-white z-0 md:w-6/12 lg:3/12 lg:ml-7 xl:ml-12">
           <div className="flex justify-center">
             <Image
               src="/sam.png"

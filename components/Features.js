@@ -8,9 +8,9 @@ const Features = () => (
         Our program options
       </h1>
       <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-        <div className="p-4 md:w-1/2 lg:w-1/4 flex">
+        <div className="p-4 md:w-1/2 xl:w-1/4 flex">
           <div className="flex-grow">
-            <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
+            <h2 className="text-gray-900 text-xl title-font font-medium mb-2">
               Adult Beginners
             </h2>
             <p className="leading-relaxed text-base">
@@ -33,9 +33,9 @@ const Features = () => (
             </a></Link>
           </div>
         </div>
-        <div className="p-4 md:w-1/2 lg:w-1/4 flex">
+        <div className="p-4 md:w-1/2 xl:w-1/4 flex">
           <div className="flex-grow">
-            <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
+            <h2 className="text-gray-900 text-xl title-font font-medium mb-2">
               Adult Advanced
             </h2>
             <p className="leading-relaxed text-base">
@@ -58,9 +58,9 @@ const Features = () => (
             </a></Link>
           </div>
         </div>
-        <div className="p-4 md:w-1/2 lg:w-1/4 flex">
+        <div className="p-4 md:w-1/2 xl:w-1/4 flex">
           <div className="flex-grow">
-            <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
+            <h2 className="text-gray-900 text-xl title-font font-medium mb-2">
               Kids Program
             </h2>
             <p className="leading-relaxed text-base">
@@ -83,9 +83,9 @@ const Features = () => (
             </a></Link>
           </div>
         </div>
-        <div className="p-4 md:w-1/2 lg:w-1/4 flex">
+        <div className="p-4 md:w-1/2 xl:w-1/4 flex">
           <div className="flex-grow">
-            <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
+            <h2 className="text-gray-900 text-xl title-font font-medium mb-2">
               Teen's Program
             </h2>
             <p className="leading-relaxed text-base">
