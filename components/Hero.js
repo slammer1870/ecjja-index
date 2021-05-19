@@ -23,7 +23,7 @@ export const Hero = () => {
             The best way to learn something is to immerse yourself in it.
           </h3>
           <h4 className="text-2xl font-light text-gray-600 md:mb-4 lg:mb-12 md:text-sm lg:text-2xl">
-            Enroll in our Beginner's Program alongside others new to
+            Enroll in our Beginners Program alongside others new to
             the sport. Start getting fit and having fun today!
           </h4>
           <a
@@ -88,7 +88,7 @@ export const Hero = () => {
           The best way to learn something is to immerse yourself in it.
         </h3>
         <h4 className="text-xl font-light text-gray-600 mb-4">
-          Enroll in our Beginner's Program alongside others new to the
+          Enroll in our Beginners Program alongside others new to the
           sport. Start getting fit and having fun today!
         </h4>
         <a

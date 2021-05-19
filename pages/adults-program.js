@@ -10,7 +10,7 @@ export default function AdultsProgram() {
         <section className="pt-12">
           <div className="px-4">
             <h1 className="text-5xl font-light tracking-wider uppercase md:mb-8 md:text-3xl lg:text-5xl mb-12 md:text-center">
-              Adult's Program
+              Adults Program
             </h1>
           </div>
           <div className="max-w-screen-md mx-auto">
@@ -26,13 +26,13 @@ export default function AdultsProgram() {
                 EAST COAST JIU JITSU ACADEMY
               </h2>
               <h1 className="text-3xl font-regular mb-4 text-gray-900">
-                About our Adult's Program
+                About our Adults Program
               </h1>
               <p className="lg:w-2/3 mx-auto md:text-lg">
                 ECJJA is not your typical Jiu Jitsu academy. Here our mission is
                 to provide you or your child with world-class Jiu Jitsu
                 instruction. We pride ourselves on an environment that is warm
-                and welcoming to everyone. Wether your goals are to compete and
+                and welcoming to everyone. Whether your goals are to compete and
                 win a world title or simply get fit and fall in love with a new
                 hobby, we can help you reach them. Our members come from all
                 walks of life ranging between 5 and 65.
@@ -41,10 +41,10 @@ export default function AdultsProgram() {
             <div className="flex flex-wrap">
               <div className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
                 <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
-                  Beginner's Course
+                  Beginners Course
                 </h2>
                 <p className="leading-relaxed text-base mb-4">
-                  Begin your Jiu Jitsu journey in our renowned Beginner's
+                  Begin your Jiu Jitsu journey in our renowned Beginners
                   Classes. Get to grips with the basics in a class designed
                   specifically for people new to the sport.
                 </p>
@@ -110,7 +110,7 @@ export default function AdultsProgram() {
                     No sign up fees
                   </h2>
                   <p className="leading-relaxed text-base">
-                    Enrol in a Beginners Course or make a monthly membership.
+                    Enroll in a Beginners Course or make a monthly membership.
                     Simple. No extra fees or charges.
                   </p>
                 </div>
@@ -135,8 +135,7 @@ export default function AdultsProgram() {
                   </h2>
                   <p className="leading-relaxed text-base">
                     Many Jiu Jitsu academies force students to wear a particular
-                    colour uniform or specific patches. Here you can wear what
-                    you gi like.
+                    colour uniform or specific patches. Here you can wear whatever gi like.
                   </p>
                 </div>
               </div>
@@ -172,7 +171,7 @@ export default function AdultsProgram() {
               </div>
               <div className="bg-gray-100 p-6 -mt-16 min-h-full relative flex flex-col justify-between">
                 <h3 className="text-xl font-thin pt-20 h-76">
-                  “When I was looking to take up Jiu-Jitsu I wanted it all,
+                  “When I was looking to take up Jiu Jitsu I wanted it all,
                   great facilities, great teammates and most of all an
                   instructor that genuinely cared about the development of his
                   students. Thankfully I found all of that in ECJJA and haven’t

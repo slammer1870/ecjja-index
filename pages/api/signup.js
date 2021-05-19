@@ -1,10 +1,10 @@
-import mailchimp from "@mailchimp/mailchimp_marketing";
+//import mailchimp from "@mailchimp/mailchimp_marketing";
 const sgMail = require("@sendgrid/mail");
 
-mailchimp.setConfig({
-  apiKey: process.env.MAILCHIMP_API_KEY,
-  server: process.env.MAILCHIMP_API_SERVER, // e.g. us1
-});
+//mailchimp.setConfig({
+//  apiKey: process.env.MAILCHIMP_API_KEY,
+//  server: process.env.MAILCHIMP_API_SERVER, // e.g. us1
+//});
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
@@ -14,8 +14,8 @@ export default async (req, res) => {
   const sender = name && email ? `${name} <${email}>` : `${name || email}`;
 
   const message = {
-    from: "sam@execbjj.com",
-    to: "sam@execbjj.com",
+    from: "info@ecjja.com",
+    to: "info@ecjja.com",
     subject: `New message from ${sender}`,
     text: `${name} has just registered interest in signing up for the next beginner's course. Click "reply" to this email to reply to ${email}`,
     replyTo: sender,
@@ -26,15 +26,13 @@ export default async (req, res) => {
   }
 
   try {
-    const mail = await mailchimp.lists.addListMember(
-      process.env.NEWSLETTER_AUDIENCE_ID,
-      {
-        email_address: email,
-        status: "subscribed",
-      }
-    );
-
-    console.log(mail)
+    //const mail = await mailchimp.lists.addListMember(
+    //  process.env.BEGINNERS_AUDIENCE_ID,
+    //  {
+    //    email_address: email,
+    //    status: "subscribed",
+    //  }
+    //);
 
     await sgMail.send(message);
     return res.status(201).json({ error: "" });

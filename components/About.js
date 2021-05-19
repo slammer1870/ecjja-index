@@ -47,7 +47,7 @@ const About = () => (
           </p>
           <div className="hidden md:block md:text-sm lg:text-base xl:text-lg">
             <p className="mb-8 md:mb-4">
-              Upon beginning training with us you will start in our beginner’s
+              Upon beginning training with us you will start in our beginners
               program. Here you will learn the basic techniques and strategies
               of grappling.
             </p>
@@ -67,7 +67,7 @@ const About = () => (
         </div>
         <div className="md:hidden">
           <p className="mb-8">
-            Upon beginning training with us you will start in our beginner’s
+            Upon beginning training with us you will start in our beginners
             program. Here you will learn the basic techniques and strategies of
             grappling
           </p>
@@ -102,7 +102,7 @@ const About = () => (
             </span>
           </p>
           <p className="mb-8 md:text-sm lg:text-base xl:text-lg">
-            Our beginner’s program runs in cycles which mean that every group
+            Our beginners program runs in cycles which means that every group
             starts at the same time, from the same place. You will be in a group
             of people with the exact same level of experience as you!
           </p>

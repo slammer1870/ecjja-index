@@ -14,7 +14,7 @@ const Features = () => (
               Adult Beginners
             </h2>
             <p className="leading-relaxed text-base">
-              Our Adult Beginners program runs on an 8 week cycle. In this program we cover the basic techniques of Brazilian Jiu Jitsu. When you sign up to the beginner's program you will recieve a training uniform. 
+              Our Adult Beginners program runs on an 8 week cycle. In this program we cover the basic techniques of Brazilian Jiu Jitsu. When you sign up to the beginners program you will receive a training uniform. 
             </p>
             <Link href="adults-program">
             <a className="mt-3 text-blue-500 inline-flex items-center">
@@ -39,7 +39,7 @@ const Features = () => (
               Adult Advanced
             </h2>
             <p className="leading-relaxed text-base">
-              Our Advanced class is where our more experienced students train. ECJJA is a world class academy hosting multiple World and European Champions. In there classes you will get to train alonside top level athletes with expert instruction!
+              Our Advanced class is where our more experienced students train. ECJJA is a world class academy hosting multiple World and European Champions. In these classes you will get to train alonside top level athletes with expert instruction!
             </p>
             <Link href="adults-program">
             <a className="mt-3 text-blue-500 inline-flex items-center">
@@ -64,7 +64,7 @@ const Features = () => (
               Kids Program
             </h2>
             <p className="leading-relaxed text-base">
-              Our Kid's program is structured to introduce children to Jiu Jitsu through fun and games. We cater for ages from 5 - 11 years old. Jiu Jitsu teaches children the principles of discipline while improving their overall health and fitness.
+              Our Kids program is structured to introduce children to Jiu Jitsu through fun and games. We cater for ages from 5 - 11 years old. Jiu Jitsu teaches children the principles of discipline while improving their overall health and fitness.
             </p>
             <Link href="kids-program">
             <a className="mt-3 text-blue-500 inline-flex items-center">
@@ -89,7 +89,7 @@ const Features = () => (
               Teen's Program
             </h2>
             <p className="leading-relaxed text-base">
-              Our Teen's program is structured similarly to our Adult's programs but tailored specifially to appeal to teenagers. In this program we teach Teens all aspects of Jiu Jitsu as well as giving them the option to compete in Jiu Jitsu tournaments.
+              Our Teens program is structured similarly to our Adults programs but tailored specifially to for teens. In this program we teach Teens all aspects of Jiu Jitsu as well as giving them the option to compete in Jiu Jitsu tournaments.
             </p>
             <Link href="kids-program">
             <a className="mt-3 text-blue-500 inline-flex items-center">

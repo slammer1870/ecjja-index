@@ -1,42 +1,46 @@
 import React, { useState, useRef } from "react";
 
 const Footer = () => {
-    // 1. Create a reference to the input so we can fetch/clear it's value.
-    const inputEl = useRef(null);
-    // 2. Hold a message in state to handle the response from our API.
-    const [message, setMessage] = useState("");
+  // 1. Create a reference to the input so we can fetch/clear it's value.
+  const inputEl = useRef(null);
+  // 2. Hold a message in state to handle the response from our API.
+  const [message, setMessage] = useState("");
 
-    const subscribe = async (e) => {
-      e.preventDefault();
+  const subscribe = async (e) => {
+    e.preventDefault();
 
-      // 3. Send a request to our API with the user's email address.
-      const res = await fetch("/api/subscribe", {
-        body: JSON.stringify({
-          email: inputEl.current.value,
-        }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-        method: "POST",
-      });
+    // 3. Send a request to our API with the user's email address.
+    const res = await fetch("/api/subscribe", {
+      body: JSON.stringify({
+        email: inputEl.current.value,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+    });
 
-      const { error } = await res.json();
+    const { error } = await res.json();
 
-      if (error) {
-        // 4. If there was an error, update the message in state.
-        setMessage(error);
+    if (error) {
+      // 4. If there was an error, update the message in state.
+      setMessage(error);
 
-        return;
-      }
+      return;
+    }
 
-      // 5. Clear the input value and show a success message.
-      inputEl.current.value = "";
-      setMessage("Success! 🎉 You are now subscribed to the newsletter.");
-    };
+    // 5. Clear the input value and show a success message.
+    inputEl.current.value = "";
+    setMessage("Success! 🎉 You are now subscribed to the newsletter.");
+  };
 
   return (
     <footer className="px-4 py-8 bg-gray-500 flex justify-between md:px-20 lg:px-40">
-      <form className="flex flex-col w-1/2" id="newsletter" onSubmit={subscribe}>
+      <form
+        className="flex flex-col w-1/2"
+        id="newsletter"
+        onSubmit={subscribe}
+      >
         <h5 className="text-white text-sm w-max mb-3">
           Subscribe to our newsletter
         </h5>
@@ -56,11 +60,17 @@ const Footer = () => {
           </button>
         </div>
         <div>
-        {message
-          ? <p className="mt-3 text-sm text-white">{message}</p>
-          :<p className="mt-3 text-sm text-white">We'll only send emails when new content is posted. No spam.</p>}
-      </div>
-        <p className="text-sm text-white mt-3">© 2021 ECJJA</p>
+          {message ? (
+            <p className="mt-3 text-sm text-white">{message}</p>
+          ) : (
+            <p className="mt-3 text-sm text-white">
+              We'll only send emails when new content is posted. No spam.
+            </p>
+          )}
+        </div>
+        <p className="text-sm text-white mt-3">
+          © {new Date().getFullYear()} ECJJA
+        </p>
       </form>
       <ul className="flex flex-col justify-around">
         <a href="mailto:info@ecjja.com" target="_blank">

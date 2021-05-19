@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import kidscontact from "./api/kidscontact";
+import KidsForm from "../components/KidsForm";
 
 export default function KidsProgram() {
   return (
@@ -7,18 +9,19 @@ export default function KidsProgram() {
       <section>
         <div className="container py-12 mx-auto flex flex-col">
           <h1 className="text-5xl px-4 md:px-0 font-light tracking-wider uppercase md:mb-8 md:text-3xl lg:text-5xl mb-12 md:text-center">
-            Kid's Program
+            Kids Program
           </h1>
           <div className="lg:w-4/6 mx-auto">
             <div className="max-w-screen-md mx-auto">
-            <div className="aspect-w-16 aspect-h-9">
-              <Image
-                src="/kids1.jpeg"
-                layout="fill"
-                objectFit="cover"
-                objectPosition="center"
-              />
-            </div></div>
+              <div className="aspect-w-16 aspect-h-9">
+                <Image
+                  src="/kids1.jpeg"
+                  layout="fill"
+                  objectFit="cover"
+                  objectPosition="center"
+                />
+              </div>
+            </div>
             <div className="flex flex-col sm:flex-row mt-10">
               <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8 z-0">
                 <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
@@ -35,18 +38,18 @@ export default function KidsProgram() {
                   </h2>
                   <div className="w-36 h-1 bg-gray-400 mt-2 mb-4" />
                   <p className="text-base">
-                    Head Instructor of our Kid's and Teen's Program
+                    Head Instructor of our Kids and Teens Program
                   </p>
                 </div>
               </div>
               <div className="sm:w-2/3 p-4 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 sm:text-left">
-              <h1 className="text-3xl font-regular mb-4 text-gray-900">
-                About our Kid's Program
-              </h1>
+                <h1 className="text-3xl font-regular mb-4 text-gray-900">
+                  About our Kids Program
+                </h1>
                 <p className="leading-relaxed text-lg mb-4">
-                  Our kids program caters to 3 different age groups. 5-7 years
-                  old, 8-11 and finally our Teens Class from 11-15. Led by
-                  European Champion Marcus Phelan, our Kids programs will
+                  Our kids Program caters to 3 different age groups. 5-7 years
+                  old, 8-11 and finally our teens Class from 12-15. Led by
+                  European Champion Marcus Phelan, our kids programs will
                   develop numerous qualities in your child. Their fitness,
                   ability to defend themselves, their confidence, balance and
                   coordination and much more. Jiu Jitsu is a fantastic
@@ -74,7 +77,7 @@ export default function KidsProgram() {
             <div className="p-4 md:w-1/3 flex flex-col items-center">
               <div className="flex-grow">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                  5-7 Years old
+                  5-7 Years Old
                 </h2>
                 <p className="leading-relaxed text-base">
                   The objective of this class is fun. Marcus has designed plenty
@@ -86,13 +89,13 @@ export default function KidsProgram() {
             <div className="p-4 md:w-1/3 flex flex-col items-center">
               <div className="flex-grow">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                  8-11 Years old
+                  8-11 Years Old
                 </h2>
                 <p className="leading-relaxed text-base">
                   Still using fun and games, the goal of this class is to
-                  develop further your childs motor skills and build some
+                  develop further your child's motor skills and build some
                   strength and fitness. This age group focuses on building good,
-                  safe grappling skills that will carry them through to the Teen
+                  safe grappling skills that will carry them through to the teen
                   and adult age groups.
                 </p>
               </div>
@@ -103,8 +106,8 @@ export default function KidsProgram() {
                   12-15 Teens Class
                 </h2>
                 <p className="leading-relaxed text-base">
-                  tructured much more similarly to an adults class. Our Teens
-                  Class has multiple elements from fitness, strength and
+                  Structured much more similarly to an adults class. Our teens
+                  class has multiple elements from fitness, strength and
                   gymnastic based warm ups, to clear and concise technical
                   instruction and controlled sparring to finish.
                 </p>
@@ -113,76 +116,7 @@ export default function KidsProgram() {
           </div>
         </div>
       </section>
-      <section className="text-gray-600 body-font relative">
-        <div className="container px-4 md:px-0 pb-12 mx-auto">
-          <div className="flex flex-col text-center w-full mb-12">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-              Contact us to enroll your Child
-            </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Fill in the form below and we will get back to you as soon as
-              possible!
-            </p>
-          </div>
-          <div className="lg:w-1/2 md:w-2/3 mx-auto">
-            <div className="flex flex-wrap -m-2">
-              <div className="p-2 w-1/2">
-                <div className="relative">
-                  <label
-                    htmlFor="name"
-                    className="leading-7 text-sm text-gray-600"
-                  >
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    className="w-full bg-gray-100 bg-opacity-50 border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                  />
-                </div>
-              </div>
-              <div className="p-2 w-1/2">
-                <div className="relative">
-                  <label
-                    htmlFor="email"
-                    className="leading-7 text-sm text-gray-600"
-                  >
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full bg-gray-100 bg-opacity-50 border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                  />
-                </div>
-              </div>
-              <div className="p-2 w-full">
-                <div className="relative">
-                  <label
-                    htmlFor="message"
-                    className="leading-7 text-sm text-gray-600"
-                  >
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    className="w-full bg-gray-100 bg-opacity-50 border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                    defaultValue={""}
-                  />
-                </div>
-              </div>
-              <div className="p-2 w-full">
-                <button className="flex justify-center items-center w-full mx-auto text-white text-center bg-blue-400 border-0 py-2 px-8 focus:outline-none hover:bg-blue-500 text-lg">
-                  Submit
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <KidsForm />
     </div>
   );
 }
