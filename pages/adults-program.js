@@ -160,7 +160,7 @@ export default function AdultsProgram() {
             What others have had to say
           </h1>
           <div className="flex flex-wrap justify-around xl:justify-between">
-            <card className="md:w-72 lg:w-80 flex flex-col mx-auto md:mx-0 mb-24 bg-white z-0 ">
+            <card className="md:w-72 lg:w-80 2xl:w-96 flex flex-col mx-auto md:mx-0 mb-24 bg-white z-0 ">
               <div className="flex justify-center">
                 <Image
                   src="/dave.png"
@@ -183,7 +183,7 @@ export default function AdultsProgram() {
                 </div>
               </div>
             </card>
-            <card className="md:w-72 lg:w-80 flex flex-col mx-auto md:mx-0 mb-24 bg-white z-0 ">
+            <card className="md:w-72 lg:w-80 2xl:w-96 flex flex-col mx-auto md:mx-0 mb-24 bg-white z-0 ">
               <div className="flex justify-center">
                 <Image
                   src="/rioghnach.png"
@@ -208,7 +208,7 @@ export default function AdultsProgram() {
                 </div>
               </div>
             </card>
-            <card className="md:w-72 lg:w-80 flex flex-col mx-auto md:mx-0 mb-24 bg-white z-0 ">
+            <card className="md:w-72 lg:w-80 2xl:w-96 flex flex-col mx-auto md:mx-0 mb-24 bg-white z-0 ">
               <div className="flex justify-center">
                 <Image
                   src="/sam.png"

@@ -13,7 +13,7 @@ const About = () => (
             objectFit="cover"
           />
         </div>
-        <card className="flex flex-col relative md:w-5/12 lg:w-1/2 lg:pl-14 xl:pl-32">
+        <card className="flex flex-col relative md:w-5/12 lg:w-2/3 xl:w-1/2 lg:pl-14 xl:pl-32">
           <h3 className="text-5xl mb-8 font-light text-left md:mb-4 md:text-3xl xl:text-5xl xl:mb-10">
             Who are we?
           </h3>

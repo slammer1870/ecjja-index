@@ -6,7 +6,7 @@ const Testimonials = () => {
   return (
     <section className="py-12 px-4 md:px-0">
       <div className="flex justify-between mb-32">
-        <card className="flex flex-col mx-auto bg-white z-0 md:w-6/12 md:mr-7 lg:3/12 xl:mr-12">
+        <card className="flex flex-col mx-auto bg-white z-0 md:w-6/12 md:mr-7 xl:mr-12">
           <div className="flex justify-center">
             <Image
               src="/dave.png"
@@ -28,7 +28,7 @@ const Testimonials = () => {
             </div>
           </div>
         </card>
-        <card className="hidden md:block flex flex-col bg-white z-0 md:w-6/12 md:ml-7 lg:3/12 lg:mr-7 xl:mx-12">
+        <card className="hidden md:block flex flex-col bg-white z-0 md:w-6/12 md:ml-7 lg:mr-7 xl:mx-12">
           <div className="flex justify-center">
             <Image
               src="/rioghnach.png"
@@ -52,7 +52,7 @@ const Testimonials = () => {
             </div>
           </div>
         </card>
-        <card className="hidden xl:block flex flex-col bg-white z-0 md:w-6/12 lg:3/12 lg:ml-7 xl:ml-12">
+        <card className="hidden xl:block flex flex-col bg-white z-0 md:w-6/12 lg:ml-7 xl:ml-12">
           <div className="flex justify-center">
             <Image
               src="/sam.png"
