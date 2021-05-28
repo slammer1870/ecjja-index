@@ -35,6 +35,7 @@ const KidsForm = () => {
     e.target.email.value = "";
     e.target.name.value = "";
     e.target.message.value = "";
+    setMessage("Thank you for your submission!");
     setLoading(false);
   };
   return (
