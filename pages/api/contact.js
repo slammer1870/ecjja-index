@@ -9,7 +9,7 @@ export default async (req, res) => {
   const message = {
     from: "info@ecjja.com",
     to: "hello@sammcnally.dev",
-    subject: `New message from ${sender}`,
+    subject: `[TEST]New message from ${sender}`,
     text,
     replyTo: sender,
   };
