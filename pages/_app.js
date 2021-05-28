@@ -1,12 +1,15 @@
-import 'tailwindcss/tailwind.css'
+import "tailwindcss/tailwind.css";
 
 import Layout from "../components/Layout";
+import PlausibleProvider from "next-plausible";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <PlausibleProvider domain="ecjja.com">
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </PlausibleProvider>
   );
 }
 
