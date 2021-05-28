@@ -8,8 +8,8 @@ export default async (req, res) => {
   const sender = name && email ? `${name} <${email}>` : `${name || email}`;
   const message = {
     from: "info@ecjja.com",
-    to: "hello@sammcnally.dev",
-    subject: `[TEST]New message from ${sender}`,
+    to: "info@ecjja.com",
+    subject: `New message from ${sender}`,
     text,
     replyTo: sender,
   };
