@@ -9,7 +9,7 @@ export default function EcjjaOnline({ posts, categories }) {
 
   return (
     <div>
-      <section className="text-gray-600 body-font pt-12">
+      <section className="text-gray-600 body-font pt-8">
         <div className="container mx-auto flex p-4 md:px-0 md:flex-row flex-col items-start">
           <div className="lg:flex-grow md:w-1/2 xl:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-8 md:mb-0">
             <h1 className="text-3xl mb-4 font-medium text-gray-900">
