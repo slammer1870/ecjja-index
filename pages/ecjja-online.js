@@ -7,8 +7,6 @@ import { getPosts, getCategories } from "../lib/api";
 export default function EcjjaOnline({ posts, categories }) {
   const [selectedCategory, setSelectedCategory] = useState(categories[0].title);
 
-  console.log("inside the function categories are", categories);
-
   return (
     <div>
       <section className="text-gray-600 body-font pt-12">
@@ -80,12 +78,7 @@ export default function EcjjaOnline({ posts, categories }) {
 
 export async function getStaticProps() {
   const posts = await getPosts();
-  //const posts = JSON.stringify(postData);
   const categories = await getCategories();
-  //const categories = JSON.stringify(categoryData);
-
-  console.log("posts are", posts);
-  console.log("categories are", categories);
 
   return {
     props: {
