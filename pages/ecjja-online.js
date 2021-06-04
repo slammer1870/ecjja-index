@@ -45,6 +45,7 @@ export default function EcjjaOnline({ posts, categories }) {
                   name="series"
                   id="series"
                   onChange={(e) => setSelectedCategory(e.target.value)}
+                  className="bg-white"
                 >
                   {categories.map((category) => (
                     <option value={category.title}>{category.title}</option>
