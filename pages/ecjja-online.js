@@ -83,7 +83,7 @@ export async function getStaticProps() {
   return {
     props: {
       posts: posts.posts,
-      categories: categories.categories,
+      categories: categories.categories
     },
   };
 }
