@@ -10,6 +10,7 @@ const Testimonials = () => {
           <div className="flex justify-center">
             <Image
               src="/dave.png"
+              alt="Dave testimonial"
               width={120}
               height={120}
               className="rounded-full z-10"
@@ -32,6 +33,7 @@ const Testimonials = () => {
           <div className="flex justify-center">
             <Image
               src="/rioghnach.png"
+              alt="Rioghnach testimonial"
               width={120}
               height={120}
               className="rounded-full z-10"
@@ -56,6 +58,7 @@ const Testimonials = () => {
           <div className="flex justify-center">
             <Image
               src="/sam.png"
+              alt="Sam testimonial"
               width={120}
               height={120}
               className="rounded-full z-10"

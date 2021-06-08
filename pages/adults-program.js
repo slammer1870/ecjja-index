@@ -15,7 +15,7 @@ export default function AdultsProgram() {
           </div>
           <div className="max-w-screen-md mx-auto">
             <div className="bg-video bg-cover aspect-w-16 aspect-h-9">
-              <Image src="/adults.jpg" layout="fill" objectFit="cover" />
+              <Image src="/adults.jpg" alt="Adult's Program" layout="fill" objectFit="cover" />
             </div>
           </div>
         </section>
@@ -164,6 +164,7 @@ export default function AdultsProgram() {
               <div className="flex justify-center">
                 <Image
                   src="/dave.png"
+                  alt="Dave"
                   width={120}
                   height={120}
                   className="rounded-full z-10"
@@ -187,6 +188,7 @@ export default function AdultsProgram() {
               <div className="flex justify-center">
                 <Image
                   src="/rioghnach.png"
+                  alt="Rioghnach"
                   width={120}
                   height={120}
                   className="rounded-full z-10"
@@ -212,6 +214,7 @@ export default function AdultsProgram() {
               <div className="flex justify-center">
                 <Image
                   src="/sam.png"
+                  alt="Sam"
                   width={120}
                   height={120}
                   className="rounded-full z-10"

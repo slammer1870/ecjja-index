@@ -16,6 +16,7 @@ export default function KidsProgram() {
               <div className="aspect-w-16 aspect-h-9">
                 <Image
                   src="/kids1.jpeg"
+                  alt="Kids class"
                   layout="fill"
                   objectFit="cover"
                   objectPosition="center"
@@ -27,10 +28,11 @@ export default function KidsProgram() {
                 <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
                   <Image
                     src="/testimonial3.png"
+                    alt="Marcus"
                     width={120}
                     height={120}
                     className="rounded-full z-10"
-                  />{" "}
+                  />
                 </div>
                 <div className="flex flex-col items-center text-center justify-center">
                   <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">

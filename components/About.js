@@ -60,7 +60,7 @@ const About = () => (
         <div className="aspect-w-16 aspect-h-9 mb-8 md:mb-0 md:w-6/12 md:pb-56 lg:pb-96 ">
           <Image
             src="/learn.jpg"
-            alt="Darragh"
+            alt="Learning"
             layout="fill"
             objectFit="cover"
           />
@@ -86,7 +86,7 @@ const About = () => (
         <div className="aspect-w-16 aspect-h-9 mb-8 md:mb-0 md:w-6/12 md:pb-56 lg:pb-96 ">
           <Image
             src="/happy.jpeg"
-            alt="Darragh"
+            alt="Happy People"
             layout="fill"
             objectFit="cover"
           />
@@ -109,7 +109,7 @@ const About = () => (
           <div className="md:hidden aspect-w-16 aspect-h-9 md:mb-0 md:w-6/12 md:pb-56 lg:pb-96 ">
           <Image
             src="/lineup.jpg"
-            alt="Darragh"
+            alt="Line Up"
             layout="fill"
             objectFit="cover"
           />
