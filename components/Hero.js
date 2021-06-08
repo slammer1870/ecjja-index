@@ -38,7 +38,7 @@ export const Hero = () => {
         className="aspect-w-16 aspect-h-9 h-1/3 md:w-1/2 md:pb-56 xl:pb-96"
         onClick={handleVideo}
       >
-        <Image src="/academypic.jpeg" layout="fill" objectFit="cover" />
+        <Image src="/academypic.jpeg" alt="Academy" layout="fill" objectFit="cover" />
         <div className="bg-black w-full h-full bg-opacity-50 flex justify-center items-center mx-auto">
           <div className="w-48 h-auto xl:w-56">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 178 45">
