@@ -49,7 +49,7 @@ export default function KidsProgram() {
                   About our Kids Program
                 </h1>
                 <p className="leading-relaxed text-lg mb-4">
-                  Our kids Program caters to 3 different age groups. 5-7 years
+                  Our Kids Program caters to 3 different age groups. 5-7 years
                   old, 8-11 and finally our teens Class from 12-15. Led by
                   European Champion Marcus Phelan, our kids programs will
                   develop numerous qualities in your child. Their fitness,
