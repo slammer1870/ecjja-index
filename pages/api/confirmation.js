@@ -1,4 +1,5 @@
 const stripe = require("stripe")(process.env.STRIPE_SK);
+const sgMail = require("@sendgrid/mail");
 
 export default async (req, res) => {
   const { checkout_session } = req.body;

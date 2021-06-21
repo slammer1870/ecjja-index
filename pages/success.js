@@ -9,7 +9,6 @@ export default function Success() {
 
   console.log("session id is",session_id)
 
-  const [status, setStatus] = useState(null);
   const [email, setEmail] = useState(null);
   const [loading, setLoading] = useState(null);
   const [error, setError] = useState(null);
@@ -29,7 +28,6 @@ export default function Success() {
         const result = await res.json();
 
         setEmail(result.customer_email)
-        setStatus(result.payment_status)
 
       } catch (error) {
         setError(error);
@@ -41,6 +39,7 @@ export default function Success() {
 
   return (
     <div>
+        <hello>hi</hello>
       {!error && !loading && (
         <div className="text-center py-48 md:py-96">
           <h1 className="text-4xl mb-4">Thank you for your purchase!</h1>
