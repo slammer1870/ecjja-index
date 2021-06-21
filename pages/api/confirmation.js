@@ -7,7 +7,7 @@ export default async (req, res) => {
   try {
     const session = await stripe.checkout.sessions.retrieve(checkout_session);
     if (session) {
-      sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+      //sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
       const message = {
         from: "info@ecjja.com",
@@ -16,7 +16,7 @@ export default async (req, res) => {
         text: `${session.customer_email} has just confimered their payment `,
         replyTo: session.customer_email,
       };
-      await sgMail.send(message);
+      //await sgMail.send(message);
     }
 
     return res.status(201).json(session);
