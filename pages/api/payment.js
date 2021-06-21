@@ -35,7 +35,7 @@ export default async (req, res) => {
 
       const message = {
         from: "info@ecjja.com",
-        to: "hello@sammcnally.dev",
+        to: "info@ecjja.com",
         subject: `New checkout initiated from ${email}`,
         text: `${name} has just initiated a checkout session for the next beginner's course. Their Gi size is ${size}. You will receive a confirmation email in this thread once their payment has been approved.`,
         replyTo: email,
