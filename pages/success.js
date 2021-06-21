@@ -5,10 +5,6 @@ export default function Success() {
   const router = useRouter();
   const { session_id } = router.query;
 
-  console.log("router contains",router.query)
-
-  console.log("session id is",session_id)
-
   const [email, setEmail] = useState(null);
   const [loading, setLoading] = useState(null);
   const [error, setError] = useState(null);
