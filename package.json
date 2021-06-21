@@ -10,6 +10,7 @@
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.41",
     "@sendgrid/mail": "^7.4.4",
+    "@stripe/stripe-js": "^1.15.1",
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "next": "^10.2.0",
     "next-plausible": "^1.6.1",
@@ -17,7 +18,8 @@
     "nodemailer-sendgrid-transport": "^0.2.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-instagram-authless-feed": "github:jamesmoriarty/react-instagram-authless-feed"
+    "react-instagram-authless-feed": "github:jamesmoriarty/react-instagram-authless-feed",
+    "stripe": "^8.156.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
