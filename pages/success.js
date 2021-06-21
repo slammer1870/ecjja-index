@@ -22,12 +22,12 @@ const useSession = (session_id) => {
 
         setSession(result);
       } catch (error) {
-        setError(error);
+        setError(error.message);
       }
       setLoading(false);
     };
     fetchSession();
-  }, [session_id]);
+  }, []);
 
   return { session, loading, error };
 };
