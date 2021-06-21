@@ -33,6 +33,7 @@ const CourseProduct = () => {
         email: e.target.email.value,
         name: e.target.name.value,
         size: e.target.size.value,
+        updates: e.target.updates.value,
       }),
       headers: {
         "Content-type": "application/json",
@@ -58,7 +59,7 @@ const CourseProduct = () => {
   return (
     <section className="text-gray-600 overflow-hidden">
       <div className="px-5 py-6 lg:py-24 mx-auto">
-        <div className="mx-auto flex flex-wrap">
+        <div className="mx-auto flex flex-wrap justify-around">
           <Image
             src="/beginners.jpg"
             width={600}
@@ -66,7 +67,7 @@ const CourseProduct = () => {
             alt="beginners"
             className="w-full h-64 object-cover object-center"
           />
-          <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+          <div className="xl:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
             <h2 className="text-sm title-font text-gray-500 tracking-widest">
               EAST COAST JIU JITSU ACADEMY
             </h2>
@@ -106,6 +107,7 @@ const CourseProduct = () => {
                     Name
                   </label>
                   <input
+                    required
                     type="text"
                     id="name"
                     name="name"
@@ -120,6 +122,7 @@ const CourseProduct = () => {
                     Email
                   </label>
                   <input
+                    required
                     type="email"
                     id="email"
                     name="email"
@@ -136,8 +139,9 @@ const CourseProduct = () => {
                       Click here
                     </a>
                   </span>
-                  <div className="relative mt-1">
+                  <div className="relative mt-1 mb-4">
                     <select
+                      required
                       id="size"
                       name="size"
                       className="w-full border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10"
@@ -165,6 +169,31 @@ const CourseProduct = () => {
                       </svg>
                     </span>
                   </div>
+                  <div className="relative">
+                    <input
+                      type="checkbox"
+                      id="gdpr"
+                      name="gdpr"
+                      className="mr-2 mb-4"
+                      required
+                    />
+                    <label className="text-xs text-gray-500 mt-3" for="gdpr">
+                      I consent to ECJJA's{" "}
+                      <span className="underline">terms of service</span>
+                    </label>
+                  </div>
+                  <div className="relative">
+                    <input
+                      type="checkbox"
+                      id="updates"
+                      name="updates"
+                      className="mr-2"
+                    />
+                    <label className="text-xs text-gray-500 mt-3" for="gdpr">
+                      I would like to hear about academy and training updates
+                      from ECJJA
+                    </label>
+                  </div>
                 </div>
               </div>
               <div className="flex border-t pt-4 mt-4 border-gray-200">
@@ -173,7 +202,7 @@ const CourseProduct = () => {
                 </span>
                 <button
                   type="submit"
-                  className="flex w-36 items-center justify-center ml-auto text-white bg-blue-500 border-0 py-2 focus:outline-none hover:bg-blue-600"
+                  className="flex w-36 items-center justify-center ml-auto text-white text-center bg-blue-500 border-0 py-2 focus:outline-none hover:bg-blue-600"
                 >
                   {!message && loading && (
                     <svg

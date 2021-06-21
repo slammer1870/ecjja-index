@@ -2,10 +2,12 @@ const stripe = require("stripe")(process.env.STRIPE_SK);
 const sgMail = require("@sendgrid/mail");
 
 export default async (req, res) => {
+  const { name, email, size, } = req.body;
+
   try {
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
-      customer_email: req.body.email,
+      customer_email: email,
       mode: "payment",
       success_url: `https://www.ecjja.com/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: "https://www.ecjja.com/",
@@ -28,8 +30,6 @@ export default async (req, res) => {
     if (session) {
       sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-      const { name, email, size } = req.body;
-
       const message = {
         from: "info@ecjja.com",
         to: "hello@sammcnally.dev",
@@ -39,6 +39,7 @@ export default async (req, res) => {
       };
       await sgMail.send(message);
     }
+
     return res.status(200).json({ id: session.id });
   } catch (error) {
     console.log(error);
