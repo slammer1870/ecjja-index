@@ -20,14 +20,16 @@ const useSession = (session_id) => {
 
         const result = await res.json();
 
-        setSession(result);
+        if (session == null) {
+          setSession(result);
+        }
       } catch (error) {
         setError(error.message);
       }
       setLoading(false);
     };
     fetchSession();
-  }, []);
+  }, [session_id]);
 
   return { session, loading, error };
 };
