@@ -46,16 +46,16 @@ export default function Timetable() {
               <tbody>
                 <tr>
                   <td className="px-4 py-3">6:15am</td>
-                  <td className="px-4 py-3 text-sm font-medium text-blue-500">
-                    Beginner's Class - 60 mins
+                  <td className="px-4 py-3 text-sm font-medium text-indigo-700">
+                    Mixed Class - 60 mins
                   </td>
                   <td className="px-4 py-3"></td>
-                  <td className="px-4 py-3 text-sm font-medium text-blue-500">
-                    Beginner's Class - 60 mins
+                  <td className="px-4 py-3 text-sm font-medium text-indigo-700">
+                    Mixed Class - 60 mins
                   </td>
                   <td className="px-4 py-3"></td>
-                  <td className="px-4 py-3 text-sm font-medium text-blue-500">
-                    Beginner's Class - 60 mins
+                  <td className="px-4 py-3 text-sm font-medium text-indigo-700">
+                    Mixed Class - 60 mins
                   </td>
                   <td className="px-4 py-3"></td>
                   <td className="px-4 py-3"></td>
@@ -76,8 +76,7 @@ export default function Timetable() {
                   <td className="border-t-2 border-gray-200 px-4 py-3 text-sm font-medium text-pink-900">
                     <span className="font-medium text-pink-700">
                       Kid's 5-7 years - 45 mins
-                    </span>{" "}
-                    <br /> <br /> Kid's 8-10 years - 60 mins
+                    </span>
                   </td>
                   <td className="border-t-2 border-gray-200 px-4 py-3"></td>
                 </tr>
@@ -94,7 +93,9 @@ export default function Timetable() {
                     Beginner's Class - 60 mins
                   </td>
                   <td className="border-t-2 border-gray-200 px-4 py-3"></td>
-                  <td className="border-t-2 border-gray-200 px-4 py-3"></td>
+                  <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-sm font-medium text-pink-900">
+                    Kid's 8-11 years - 60 mins
+                  </td>
                   <td className="border-t-2 border-gray-200 px-4 py-3"></td>
                 </tr>
                 <tr>
@@ -139,11 +140,11 @@ export default function Timetable() {
                   </td>
                   <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-sm font-medium text-pink-700"></td>
                   <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-sm font-medium text-pink-900">
-                    Kid's 8-10 years - 60 mins
+                    Kid's 8-11 years - 60 mins
                   </td>
                   <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-sm font-medium text-pink-700"></td>
                   <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-sm font-medium text-pink-900">
-                    Kid's 8-10 years - 60 mins
+                    Kid's 8-11 years - 60 mins
                   </td>
                   <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-sm"></td>
                   <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-sm"></td>
@@ -170,15 +171,15 @@ export default function Timetable() {
                     17:00pm
                   </td>
                   <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-sm font-medium text-green-400">
-                    Teen's Class - 60 mins
+                    Teen's Class 12-15 years - 60 mins
                   </td>
                   <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-sm font-medium text-green-400"></td>
                   <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-sm font-medium text-green-400">
-                    Teen's Class - 60 mins
+                    Teen's Class 12-15 years - 60 mins
                   </td>
                   <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-sm font-medium text-green-400"></td>
                   <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-sm font-medium text-green-400">
-                    Teen's Class - 60 mins
+                    Teen's Class 12-15 years - 60 mins
                   </td>
                   <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-sm"></td>
                   <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-sm"></td>
