@@ -4,12 +4,15 @@ const sgMail = require("@sendgrid/mail");
 export default async (req, res) => {
   const { name, email, size, } = req.body;
 
+  const BASE_URL = req.headers.origin || "http://localhost:3000";
+
+
   try {
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       customer_email: email,
       mode: "payment",
-      success_url: `https://www.ecjja.com/success?session_id={CHECKOUT_SESSION_ID}`,
+      success_url: `${BASE_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: "https://www.ecjja.com/",
       line_items: [
         {

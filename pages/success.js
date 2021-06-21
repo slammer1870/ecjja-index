@@ -7,28 +7,26 @@ const useSession = (session_id) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    if (session_id) {
-      const fetchSession = async () => {
-        setLoading(true);
-        try {
-          const res = await fetch("/api/confirmation", {
-            method: "POST",
-            body: JSON.stringify({ checkout_session: session_id }),
-            headers: {
-              "Content-type": "application/json",
-            },
-          });
+    const fetchSession = async () => {
+      setLoading(true);
+      try {
+        const res = await fetch("/api/confirmation", {
+          method: "POST",
+          body: JSON.stringify({ checkout_session: session_id }),
+          headers: {
+            "Content-type": "application/json",
+          },
+        });
 
-          const result = await res.json();
+        const result = await res.json();
 
-          setSession(result);
-        } catch (error) {
-          setError(error);
-        }
-        setLoading(false);
-      };
-      fetchSession();
-    }
+        setSession(result);
+      } catch (error) {
+        setError(error);
+      }
+      setLoading(false);
+    };
+    fetchSession();
   }, [session_id]);
 
   return { session, loading, error };
