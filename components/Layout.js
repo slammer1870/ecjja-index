@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
       <div className="md:mx-20 lg:mx-40 pt-20">
         <main>{children}</main>
       </div>
-      <Footer />
+      <Footer/>
     </>
   );
 };

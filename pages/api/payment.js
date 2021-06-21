@@ -21,7 +21,7 @@ export default async (req, res) => {
                 "https://res.cloudinary.com/dmoomgx4p/image/upload/v1624269694/ECJJA_BLACK_b6s03s.png",
               ],
             },
-            unit_amount: 18000,
+            unit_amount: 22000,
           },
           quantity: 1,
         },
@@ -37,7 +37,7 @@ export default async (req, res) => {
         text: `${name} has just initiated a checkout session for the next beginner's course. Their Gi size is ${size}. You will receive a confirmation email in this thread once their payment has been approved.`,
         replyTo: email,
       };
-      await sgMail.send(message);
+     await sgMail.send(message);
     }
 
     return res.status(200).json({ id: session.id });

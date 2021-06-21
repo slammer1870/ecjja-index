@@ -75,16 +75,16 @@ const CourseProduct = () => {
               8 Week Beginners Course - July 2021
             </h1>
             <p className="leading-relaxed mb-4">
-              This course begins on the 5th of July and runs for 8 weeks. We
+              This course runs for 8 weeks. We
               have classes at 6pm every Monday and Wednesday, 7:30pm Tuesday and
               Thursday and 12pm Saturday and Sunday. One enrolled you are free
               to attend as many sessions as you like per week. Upon enrolling
-              you will also recieve a training uniform included with your
+              you will also receive a training uniform included with your
               purchase.
             </p>
             <div className="flex border-t border-gray-200 py-2">
-              <span className="text-gray-500">Start Date</span>
-              <span className="ml-auto text-gray-900">5th of July 2021</span>
+              <span className="text-gray-500">Course Type</span>
+              <span className="ml-auto text-gray-900">Beginners Course</span>
             </div>
             <div className="flex border-t border-gray-200 py-2">
               <span className="text-gray-500">Duration</span>
@@ -198,17 +198,17 @@ const CourseProduct = () => {
               </div>
               <div className="flex border-t pt-4 mt-4 border-gray-200">
                 <span className="title-font font-medium text-2xl text-gray-900">
-                  €180.00
+                  €220.00
                 </span>
                 <button
                   type="submit"
-                  className="flex w-36 items-center justify-center ml-auto text-white text-center bg-blue-500 border-0 py-2 focus:outline-none hover:bg-blue-600"
+                  className="flex w-36 items-center justify-center ml-auto text-white text-center bg-blue-500 border-0 py-2 px-4 focus:outline-none hover:bg-blue-600"
                 >
                   {!message && loading && (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 31 31.157"
-                      className="w-4 h-4 my-1 animate-spin mx-auto"
+                      className="w-4 h-4 my-1 animate-spin mx-auto "
                     >
                       <g id="loading" transform="translate(0 0.02)">
                         <path
