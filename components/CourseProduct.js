@@ -22,6 +22,7 @@ const CourseProduct = () => {
     }
   };
   const handleSubmit = async (e) => {
+    //Create stripe checkout session
     e.preventDefault();
     setLoading(true);
     const stripe = await stripePromise;
