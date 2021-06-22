@@ -85,7 +85,7 @@ const CourseProduct = () => {
             <p className="leading-relaxed mb-4">
               This course runs for 8 weeks. We have classes at 6pm every Monday
               and Wednesday, 7:30pm Tuesday and Thursday and 12pm Saturday and
-              Sunday. One enrolled you are free to attend as many sessions as
+              Sunday. Once enrolled you are free to attend as many sessions as
               you like per week. Upon enrolling you will also receive a training
               uniform included with your purchase.
             </p>
