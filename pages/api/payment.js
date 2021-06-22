@@ -36,7 +36,7 @@ export default async (req, res) => {
       ],
     });
     if (session) {
-      //sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+      sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
       const message = {
         from: "info@ecjja.com",
@@ -45,7 +45,7 @@ export default async (req, res) => {
         text: `${name} has just initiated a checkout session for the next beginner's course. Their Gi size is ${size}. You will receive a confirmation email in this thread once their payment has been approved.`,
         replyTo: email,
       };
-      //await sgMail.send(message);
+      await sgMail.send(message);
       try {
         const response = await mailchimp.lists.getListMember(
           process.env.NEWSLETTER_AUDIENCE_ID,
