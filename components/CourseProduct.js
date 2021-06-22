@@ -75,12 +75,11 @@ const CourseProduct = () => {
               8 Week Beginners Course - July 2021
             </h1>
             <p className="leading-relaxed mb-4">
-              This course runs for 8 weeks. We
-              have classes at 6pm every Monday and Wednesday, 7:30pm Tuesday and
-              Thursday and 12pm Saturday and Sunday. One enrolled you are free
-              to attend as many sessions as you like per week. Upon enrolling
-              you will also receive a training uniform included with your
-              purchase.
+              This course runs for 8 weeks. We have classes at 6pm every Monday
+              and Wednesday, 7:30pm Tuesday and Thursday and 12pm Saturday and
+              Sunday. One enrolled you are free to attend as many sessions as
+              you like per week. Upon enrolling you will also receive a training
+              uniform included with your purchase.
             </p>
             <div className="flex border-t border-gray-200 py-2">
               <span className="text-gray-500">Course Type</span>
@@ -180,18 +179,6 @@ const CourseProduct = () => {
                     <label className="text-xs text-gray-500 mt-3" for="gdpr">
                       I consent to ECJJA's{" "}
                       <span className="underline">terms of service</span>
-                    </label>
-                  </div>
-                  <div className="relative">
-                    <input
-                      type="checkbox"
-                      id="updates"
-                      name="updates"
-                      className="mr-2"
-                    />
-                    <label className="text-xs text-gray-500 mt-3" for="gdpr">
-                      I would like to hear about academy and training updates
-                      from ECJJA
                     </label>
                   </div>
                 </div>

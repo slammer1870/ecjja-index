@@ -41,7 +41,7 @@ export default function Success() {
   const { session, loading, error } = useSession(session_id);
 
   return (
-    <div>
+    <div className="min-h-screen">
       {!error && !loading && session && (
         <div className="text-center py-48 md:py-96">
           <h1 className="text-4xl mb-4">Thank you for your purchase!</h1>
