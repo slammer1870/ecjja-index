@@ -33,7 +33,6 @@ const CourseProduct = () => {
         email: e.target.email.value,
         name: e.target.name.value,
         size: e.target.size.value,
-        updates: e.target.updates.value,
       }),
       headers: {
         "Content-type": "application/json",
