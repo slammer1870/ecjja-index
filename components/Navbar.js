@@ -890,9 +890,8 @@ const Navbar = () => {
           onClick={handleOpen}
         ></div>
         <div
-          className={`${
-            open ? "" : "hidden"
-          } w-1/2 h-screen flex bg-white z-30 right-0 top-0 fixed items-start md:flex md:flex-row md:w-full md:bg-transparent md:h-auto md:relative md:py-0 md:items-center`}
+          className={`transform ${
+            open ? "-translate-x-0" : "translate-x-full"} ease-in-out transition-all duration-300 md:translate-x-0 w-1/2 h-screen flex bg-white z-30 right-0 top-0 fixed items-start md:flex md:flex-row md:w-full md:bg-transparent md:h-auto md:relative md:py-0 md:items-center`}
         >
           <ul className="mt-20 flex flex-col text-sm md:mt-0 md:px-0 md:text-base md:flex md:flex-row md:w-full md:bg-transparent md:h-auto md:relative md:py-0 md:justify-between md:items-center font-light">
             <li className="flex flex-col" onClick={handleDropdown}>
