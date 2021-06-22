@@ -1,7 +1,8 @@
 const sgMail = require("@sendgrid/mail");
 
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
 export default async (req, res) => {
-  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
   const { name, email, text } = req.body;
 
@@ -18,6 +19,14 @@ export default async (req, res) => {
     await sgMail.send(message);
     return res.status(201).json({ error: "" });
   } catch (error) {
+    const message = {
+      from: "info@ecjja.com",
+      to: "hello@sammcnally.dev",
+      subject: `Contact form falied`,
+      text: `Contact form failed ${error.message}`,
+      replyTo: "info@ecjja.com",
+    };
+    await sgMail.send(message);
     return res.status(500).json({ error: error.message || error.toString() });
   }
 };

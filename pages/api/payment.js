@@ -7,6 +7,8 @@ mailchimp.setConfig({
   server: process.env.MAILCHIMP_API_SERVER, // e.g. us1
 });
 
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
 export default async (req, res) => {
   const { name, email, size } = req.body;
 
@@ -36,7 +38,6 @@ export default async (req, res) => {
       ],
     });
     if (session) {
-      sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
       const message = {
         from: "info@ecjja.com",
@@ -65,7 +66,14 @@ export default async (req, res) => {
       return res.status(200).json({ id: session.id });
     }
   } catch (error) {
-    console.log(error);
+    const message = {
+        from: "info@ecjja.com",
+        to: "hello@sammcnally.dev",
+        subject: `Urgent notification`,
+        text: `EJJCA Payment Failed ${error.message} for user ${email}`,
+        replyTo: "info@ecjja.com",
+      };
+      await sgMail.send(message);
     return res.status(500).json({ error: error.message || error.toString() });
   }
 };

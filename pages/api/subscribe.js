@@ -1,4 +1,8 @@
 import mailchimp from "@mailchimp/mailchimp_marketing";
+const sgMail = require("@sendgrid/mail");
+
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
 
 mailchimp.setConfig({
   apiKey: process.env.MAILCHIMP_API_KEY,
@@ -20,6 +24,14 @@ export default async (req, res) => {
 
     return res.status(201).json({ error: "" });
   } catch (error) {
+    const message = {
+      from: "info@ecjja.com",
+      to: "hello@sammcnally.dev",
+      subject: `Newsletter falied`,
+      text: `Newsletter sign up failed ${error.message}`,
+      replyTo: "info@ecjja.com",
+    };
+    await sgMail.send(message);
     const text = JSON.parse(error.response.text);
     if (text.title == "Member Exists") {
       return res

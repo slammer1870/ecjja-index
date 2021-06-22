@@ -7,13 +7,14 @@ mailchimp.setConfig({
   server: process.env.MAILCHIMP_API_SERVER, // e.g. us1
 });
 
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
 export default async (req, res) => {
   const { checkout_session } = req.body;
 
   try {
     const session = await stripe.checkout.sessions.retrieve(checkout_session);
     if (session) {
-      sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
       const message = {
         from: "info@ecjja.com",
@@ -29,11 +30,18 @@ export default async (req, res) => {
         session.customer_email,
         { tags: [{ name: "July Beginners Course 2021", status: "active" }] }
       );
-      console.log(response);
     }
 
     return res.status(201).json(session);
   } catch (error) {
+    const message = {
+        from: "info@ecjja.com",
+        to: "hello@sammcnally.dev",
+        subject: `Confrimation falied`,
+        text: `Payment confimaiton failed ${error.message}`,
+        replyTo: "info@ecjja.com",
+      };
+      await sgMail.send(message);
     return res.status(500).json({
       error: error.message,
     });
