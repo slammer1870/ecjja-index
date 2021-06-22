@@ -4,11 +4,13 @@ import { useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 
 import SizingChart from "../components/SizingChart";
+import TermsOfService from "../components/TermsOfService";
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PK);
 
 const CourseProduct = () => {
   const [modal, setModal] = useState();
+  const [tos, setTos] = useState();
   const [loading, setLoading] = useState();
   const [message, setMessage] = useState();
 
@@ -19,6 +21,13 @@ const CourseProduct = () => {
       setModal(false);
     } else {
       setModal(true);
+    }
+  };
+  const handleTos = () => {
+    if (tos) {
+      setTos(false);
+    } else {
+      setTos(true);
     }
   };
   const handleSubmit = async (e) => {
@@ -177,7 +186,7 @@ const CourseProduct = () => {
                     />
                     <label className="text-xs text-gray-500 mt-3" for="gdpr">
                       I consent to ECJJA's{" "}
-                      <span className="underline">terms of service</span>
+                      <span className="underline" onClick={handleTos}>terms of service</span>
                     </label>
                   </div>
                 </div>
@@ -965,6 +974,7 @@ const CourseProduct = () => {
         </div>
       </div>
       {modal && <SizingChart handleModal={handleModal} />}
+      {tos && <TermsOfService handleTos={handleTos}/>}
     </section>
   );
 };
