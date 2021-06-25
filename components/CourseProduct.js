@@ -153,12 +153,16 @@ const CourseProduct = () => {
                       name="size"
                       className="w-full border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10"
                     >
-                      <option>A0</option>
-                      <option>A1</option>
-                      <option>A2</option>
-                      <option>A3</option>
-                      <option>A4</option>
-                      <option>
+                      <option value="" disabled hidden selected>
+                        Choose here
+                      </option>
+
+                      <option value="A0">A0</option>
+                      <option value="A1">A1</option>
+                      <option value="A2">A2</option>
+                      <option value="A3">A3</option>
+                      <option value="A4">A4</option>
+                      <option value="unspecified"> 
                         I'm really not sure (we'll size you up at the academy)
                       </option>
                     </select>
@@ -186,7 +190,9 @@ const CourseProduct = () => {
                     />
                     <label className="text-xs text-gray-500 mt-3" for="gdpr">
                       I consent to ECJJA's{" "}
-                      <span className="underline" onClick={handleTos}>terms of service</span>
+                      <span className="underline" onClick={handleTos}>
+                        terms of service
+                      </span>
                     </label>
                   </div>
                 </div>
@@ -974,7 +980,7 @@ const CourseProduct = () => {
         </div>
       </div>
       {modal && <SizingChart handleModal={handleModal} />}
-      {tos && <TermsOfService handleTos={handleTos}/>}
+      {tos && <TermsOfService handleTos={handleTos} />}
     </section>
   );
 };

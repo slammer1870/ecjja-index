@@ -52,7 +52,6 @@ export default async (req, res) => {
           process.env.NEWSLETTER_AUDIENCE_ID,
           email
         );
-        console.log("id is", response.id);
       } catch (error) {
         await mailchimp.lists.addListMember(
           process.env.NEWSLETTER_AUDIENCE_ID,
