@@ -102,11 +102,11 @@ export default function Timetable() {
                   </td>
                   <td className="border-t-2 border-gray-200 px-4 py-3"></td>
                   <td className="border-t-2 border-gray-200 px-4 py-3 text-sm font-medium text-purple-900">
-                    Advanced Class - 90 mins
+                    Advanced Class - 90 mins (NoGi)
                   </td>
                   <td className="border-t-2 border-gray-200 px-4 py-3"></td>
                   <td className="border-t-2 border-gray-200 px-4 py-3 text-sm font-medium text-purple-900">
-                    Advanced Class - 90 mins
+                    Advanced Class - 90 mins (NoGi)
                   </td>
                   <td className="border-t-2 border-gray-200 px-4 py-3"></td>
                   <td className="border-t-2 border-gray-200 px-4 py-3 text-sm font-medium text-blue-500">
