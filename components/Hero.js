@@ -107,7 +107,7 @@ export const Hero = () => {
           <div className="w-full max-w-screen-md bg-white md:p-0 mx-auto my-auto z-20 relative">
             <div class="aspect-w-16 aspect-h-9 mx-auto max-w-screen-md opacity-100">
               <iframe
-                src="https://www.youtube.com/embed/Vzo8tv2B4nU"
+                src="https://www.youtube.com/embed/Vzo8tv2B4nU?autoplay=1"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
