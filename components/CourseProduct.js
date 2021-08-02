@@ -16,7 +16,7 @@ const CourseProduct = () => {
   const [price, setPrice] = useState();
   const [selected, setSelected] = useState();
 
-  const priceOption = ["price_1JK5xKL1Vq7u95Df7KYEDahJ", "price_1JK5xKL1Vq7u95Df8KfXVtXW", "price_1JK5xKL1Vq7u95Df8y3RfuU9"]
+  const priceOption = ["price_1JK5WuL1Vq7u95Df5e0Dg5Lr", "price_1JK5YOL1Vq7u95Df5V1QZJKf", "price_1JK5YpL1Vq7u95Dfs6f2zpXA"]
 
   const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PK);
 
