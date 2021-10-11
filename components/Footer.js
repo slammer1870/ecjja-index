@@ -46,7 +46,7 @@ const Footer = () => {
         </h5>
         <div className="flex">
           <input
-            className="w-full  p-1 border-t mr-0 border-b border-l text-grey-400 border-white bg-gray-500 focus:bg-white lg:w-1/3"
+            className="w-full p-1 border-t mr-0 border-b border-l text-gray-400 border-white bg-gray-500 focus:bg-white lg:w-1/3"
             placeholder="Email Address"
             ref={inputEl}
           />
