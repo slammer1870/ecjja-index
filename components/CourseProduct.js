@@ -100,7 +100,7 @@ const CourseProduct = () => {
               EAST COAST JIU JITSU ACADEMY
             </h2>
             <h1 className="text-gray-900 text-3xl title-font font-medium mb-4">
-              8 Week Beginners Course - July 2021
+              8 Week Beginners Course
             </h1>
             <p className="leading-relaxed mb-4">
               This course runs for 8 weeks. We have classes at 6pm every Monday
