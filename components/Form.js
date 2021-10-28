@@ -44,7 +44,7 @@ const Form = () => {
     setLoading(false);
     e.target.name.value = "";
     e.target.email.value = "";
-    setMessage("Thank you for your submission!");
+    setMessage("Thanks! We will be in touch in the next 24 hours, please make sure you also check your spam folder if you don’t hear from us!");
   };
   return (
     <section className="text-gray-600 body-font" id="signup">
