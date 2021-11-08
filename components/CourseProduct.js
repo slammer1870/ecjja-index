@@ -16,7 +16,12 @@ const CourseProduct = () => {
   const [price, setPrice] = useState();
   const [selected, setSelected] = useState();
 
-  const priceOption = ["price_1Jtc4VL1Vq7u95DfksrI2OS0", "price_1Jtc4mL1Vq7u95DfAd9UCIeE", "price_1Jtc5CL1Vq7u95DfmbYCALRQ", "price_1Jtc64L1Vq7u95DfOl338iZc", "price_1Jtc6IL1Vq7u95DfNp6I1XWR", "price_1Jtc6jL1Vq7u95DfVpzLR7QV"]
+  
+  //const priceOption = ["price_1Jtc4VL1Vq7u95DfksrI2OS0", "price_1Jtc4mL1Vq7u95DfAd9UCIeE", "price_1Jtc5CL1Vq7u95DfmbYCALRQ", "price_1Jtc64L1Vq7u95DfOl338iZc", "price_1Jtc6IL1Vq7u95DfNp6I1XWR", "price_1Jtc6jL1Vq7u95DfVpzLR7QV"]
+  
+  //Test prices
+  const priceOption = ["price_1JtcI3L1Vq7u95DfVaWLPyuU", "price_1JtcIJL1Vq7u95DfwHCgHtj4", "price_1JtcIXL1Vq7u95DfRvHHD3Qs", "price_1JtcIqL1Vq7u95DfpOxn6PQB", "price_1JtcJIL1Vq7u95DfnS2hmVWJ", "price_1JtcJUL1Vq7u95Df9pphk0kz"]
+
 
   const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PK);
 
