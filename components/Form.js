@@ -885,7 +885,12 @@ const Form = () => {
         </form>
         <div class="pt-12 text-gray-900 mx-auto">
           <p class="text-xl font-medium text-center mb-8">OR</p>
-          <a href="https://wa.me/353830208957?text=Hey,%20I'm%20interested%20in%20getting%20started%20at%20ECJJA" class="text-2xl font-semibold flex items-center">
+          <a
+            href="https://wa.me/353830208957?text=Hey,%20I'm%20interested%20in%20getting%20started%20at%20ECJJA"
+            class="text-2xl font-semibold flex items-center"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 48.076 48.076"
