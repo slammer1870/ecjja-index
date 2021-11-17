@@ -44,7 +44,9 @@ const Form = () => {
     setLoading(false);
     e.target.name.value = "";
     e.target.email.value = "";
-    setMessage("Thanks! We will be in touch in the next 24 hours, please make sure you also check your spam folder if you don’t hear from us!");
+    setMessage(
+      "Thanks! We will be in touch in the next 24 hours, please make sure you also check your spam folder if you don’t hear from us!"
+    );
   };
   return (
     <section className="text-gray-600 body-font" id="signup">
@@ -881,6 +883,54 @@ const Form = () => {
             {message && message}
           </button>
         </form>
+        <div class="pt-12 text-gray-900 mx-auto">
+          <p class="text-xl font-medium text-center mb-8">OR</p>
+          <a href="https://wa.me/353830208957?text=Hey,%20I'm%20interested%20in%20getting%20started%20at%20ECJJA" class="text-2xl font-semibold flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 48.076 48.076"
+              class="w-16 h-16 mr-8"
+            >
+              <defs>
+                <linearGradient
+                  id="linear-gradient"
+                  x1="0.5"
+                  x2="0.5"
+                  y2="1"
+                  gradientUnits="objectBoundingBox"
+                >
+                  <stop offset="0" stop-color="#61fd7d" />
+                  <stop offset="1" stop-color="#2bb826" />
+                </linearGradient>
+              </defs>
+              <g
+                id="whatsapp-icon-logo-svgrepo-com"
+                transform="translate(0.02 -0.978)"
+              >
+                <path
+                  id="Path_448"
+                  data-name="Path 448"
+                  d="M48.052,36.854c0,.263-.008.834-.024,1.275a25.32,25.32,0,0,1-.254,3.106,10.345,10.345,0,0,1-.871,2.6,9.264,9.264,0,0,1-4.079,4.074,10.366,10.366,0,0,1-2.617.871,25.411,25.411,0,0,1-3.082.249c-.441.016-1.012.024-1.275.024l-23.672,0c-.263,0-.834-.008-1.275-.024A25.331,25.331,0,0,1,7.8,48.773,10.347,10.347,0,0,1,5.2,47.9a9.264,9.264,0,0,1-4.074-4.079,10.364,10.364,0,0,1-.871-2.617A25.431,25.431,0,0,1,0,38.125c-.016-.441-.024-1.012-.024-1.275l0-23.672c0-.263.008-.834.024-1.275A25.329,25.329,0,0,1,.261,8.8a10.344,10.344,0,0,1,.871-2.6A9.264,9.264,0,0,1,5.21,2.121,10.368,10.368,0,0,1,7.827,1.25,25.411,25.411,0,0,1,10.909,1c.441-.016,1.012-.024,1.275-.024l23.672,0c.263,0,.834.008,1.275.024a25.331,25.331,0,0,1,3.106.254,10.344,10.344,0,0,1,2.6.871,9.263,9.263,0,0,1,4.074,4.079,10.364,10.364,0,0,1,.871,2.617,25.44,25.44,0,0,1,.249,3.082c.016.441.024,1.012.024,1.275l0,23.672Z"
+                  fill="url(#linear-gradient)"
+                />
+                <g
+                  id="Group_6"
+                  data-name="Group 6"
+                  transform="translate(7.175 7.298)"
+                >
+                  <path
+                    id="Path_449"
+                    data-name="Path 449"
+                    d="M182.826,140.642a17.241,17.241,0,0,0-27.134,20.795l-2.446,8.931,9.139-2.4a17.232,17.232,0,0,0,8.238,2.1h.007a17.241,17.241,0,0,0,12.2-29.427Zm-12.2,26.516h-.006a14.31,14.31,0,0,1-7.293-2l-.523-.31-5.423,1.422,1.448-5.286-.341-.542a14.33,14.33,0,1,1,12.139,6.713Zm7.86-10.728c-.431-.216-2.549-1.257-2.943-1.4s-.682-.216-.969.216-1.113,1.4-1.364,1.688-.5.323-.933.108a11.766,11.766,0,0,1-3.464-2.137,12.977,12.977,0,0,1-2.4-2.983c-.251-.431-.027-.664.189-.879.194-.193.431-.5.646-.754a2.937,2.937,0,0,0,.431-.718.793.793,0,0,0-.036-.754c-.108-.216-.969-2.335-1.328-3.2-.35-.84-.7-.726-.969-.739s-.538-.015-.826-.015a1.583,1.583,0,0,0-1.149.539,4.829,4.829,0,0,0-1.508,3.592,8.375,8.375,0,0,0,1.759,4.455c.215.287,3.037,4.637,7.359,6.5a24.788,24.788,0,0,0,2.456.907,5.908,5.908,0,0,0,2.713.171,4.436,4.436,0,0,0,2.908-2.048,3.6,3.6,0,0,0,.251-2.048C179.208,156.754,178.921,156.646,178.49,156.43Z"
+                    transform="translate(-153.246 -135.588)"
+                    fill="#fff"
+                  />
+                </g>
+              </g>
+            </svg>
+            Click here to contact us on Whatsapp
+          </a>
+        </div>
       </div>{" "}
       {tos && <TermsOfService handleTos={handleTos} />}
     </section>
