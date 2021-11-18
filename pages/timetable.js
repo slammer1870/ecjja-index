@@ -247,13 +247,13 @@ export default function Timetable() {
                   <td className="border-t-2 border-gray-200 px-4 py-3 text-sm"></td>
                   <td className="border-t-2 border-gray-200 px-4 py-3 text-sm font-medium text-indigo-700">
                     <span className="font-medium text-indigo-700">
-                      Mixed Class - 60 mins
+                      Mixed Class - 75 mins
                     </span>
                   </td>
                   <td className="border-t-2 border-gray-200 px-4 py-3 text-sm"></td>
                   <td className="border-t-2 border-gray-200 px-4 py-3 text-sm font-medium text-indigo-700">
                     <span className="font-medium text-indigo-700">
-                      Mixed Class - 60 mins
+                      Mixed Class - 75 mins
                     </span>
                   </td>
                   <td className="border-t-2 border-gray-200 px-4 py-3 text-sm"></td>
