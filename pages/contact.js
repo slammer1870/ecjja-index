@@ -13,6 +13,7 @@ export default function Contact() {
       body: JSON.stringify({
         email: e.target.email.value,
         name: e.target.name.value,
+        tel: e.target.tel.value,
         text: e.target.message.value,
       }),
       headers: {
@@ -33,6 +34,7 @@ export default function Contact() {
     // 5. Clear the input value and show a success message.
     e.target.email.value = "";
     e.target.name.value = "";
+    e.target.tel.value = "";
     e.target.message.value = "";
     setLoading(false);
     setMessage("Thank you for your submission!");
@@ -41,7 +43,7 @@ export default function Contact() {
   return (
     <div>
       <section className="text-gray-600 pt-12 pb-24 px-4 md:px-0 relative">
-        <h1 className="mb-8 text-2xl m:text-4xl text-3xl font-medium text-gray-900">
+        <h1 className="mb-8 text-2xl m:text-4xl font-medium text-gray-900">
           Contact Us
         </h1>
         <div className="container mx-auto flex sm:flex-nowrap flex-wrap">
@@ -83,10 +85,15 @@ export default function Contact() {
                 >
                   info@ecjja.com
                 </a>
-                <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
+                <h2 className="title-font font-semibold text-blue-500 tracking-widest text-xs mt-4">
                   PHONE
                 </h2>
-                <p className="leading-relaxed">123-456-7890</p>
+                <a
+                  href="tel:086-020-8957"
+                  className="leading-relaxed"
+                >
+                  086-020-8957
+                </a>
               </div>
             </div>
           </div>
@@ -125,6 +132,17 @@ export default function Contact() {
                 name="email"
                 className="w-full bg-white border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 required
+              />
+            </div>
+            <div className="relative mb-4">
+              <label htmlFor="tel" className="leading-7 text-sm text-gray-600">
+                Phone Number
+              </label>
+              <input
+                type="tel"
+                id="tel"
+                name="tel"
+                className="w-full bg-white border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
             <div className="relative mb-4">
