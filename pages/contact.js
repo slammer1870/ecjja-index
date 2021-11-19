@@ -136,7 +136,7 @@ export default function Contact() {
             </div>
             <div className="relative mb-4">
               <label htmlFor="tel" className="leading-7 text-sm text-gray-600">
-                Phone Number
+                Phone Number (optional)
               </label>
               <input
                 type="tel"
