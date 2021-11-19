@@ -85,12 +85,12 @@ export default function Contact() {
                 >
                   info@ecjja.com
                 </a>
-                <h2 className="title-font font-semibold text-blue-500 tracking-widest text-xs mt-4">
+                <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
                   PHONE
                 </h2>
                 <a
                   href="tel:086-020-8957"
-                  className="leading-relaxed"
+                  className="text-blue-500 leading-relaxed"
                 >
                   086-020-8957
                 </a>
