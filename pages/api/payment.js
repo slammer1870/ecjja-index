@@ -13,13 +13,13 @@ export default async (req, res) => {
   const { price, name, email, size } = req.body;
 
   const testPriceOption = {
-    "beginners-course": "price_1JtcI3L1Vq7u95DfVaWLPyuU",
-    "t-shirt": "price_1JtcIJL1Vq7u95DfwHCgHtj4",
-    "1-private-lesson:": "price_1JtcIXL1Vq7u95DfRvHHD3Qs",
-    "t-shirt-1-private-lesson": "price_1JtcIqL1Vq7u95DfpOxn6PQB",
-    "3-private-lessons": "price_1JtcJIL1Vq7u95DfnS2hmVWJ",
-    "t-shirt-3-private-lessons": "price_1JtcJUL1Vq7u95Df9pphk0kz",
-    "teens-course": "price_1KHQxOL1Vq7u95DfCDCxO8jl",
+    "beginners-course": "price_1Jtc4VL1Vq7u95DfksrI2OS0",
+    "t-shirt": "price_1Jtc4mL1Vq7u95DfAd9UCIeE",
+    "1-private-lesson:": "price_1Jtc5CL1Vq7u95DfmbYCALRQ",
+    "t-shirt-1-private-lesson": "price_1Jtc64L1Vq7u95DfOl338iZc",
+    "3-private-lessons": "price_1Jtc6IL1Vq7u95DfNp6I1XWR",
+    "t-shirt-3-private-lessons": "price_1Jtc6jL1Vq7u95DfVpzLR7QV",
+    "teens-course": "price_1KHRKAL1Vq7u95DfZxYFNFFN",
   };
 
   const priceID = testPriceOption[price];
@@ -42,7 +42,7 @@ export default async (req, res) => {
       ],
     });
 
-    /*if (session) {
+    if (session) {
       const message = {
         from: "info@ecjja.com",
         to: "info@ecjja.com",
@@ -67,7 +67,7 @@ export default async (req, res) => {
       }
 
       return res.status(200).json({ id: session.id });
-    }*/
+    }
     return res.status(200).json({ id: session.id });
   } catch (error) {
     console.log(error);
