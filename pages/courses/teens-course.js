@@ -109,10 +109,10 @@ const CourseProduct = () => {
       <div className="px-4 py-6 lg:py-24 mx-auto">
         <div className="mx-auto flex flex-wrap justify-around">
           <Image
-            src="/beginners.jpg"
+            src="/teens.jpg"
             width={400}
             height={400}
-            alt="beginners"
+            alt="teens"
             className="w-full h-64 object-cover object-center"
           />
           <div className="lg:w-1/2 xl:w-7/12 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
