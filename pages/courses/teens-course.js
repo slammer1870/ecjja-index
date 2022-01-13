@@ -120,7 +120,7 @@ const CourseProduct = () => {
               EAST COAST JIU JITSU ACADEMY
             </h2>
             <h1 className="text-gray-900 text-3xl title-font font-medium mb-4">
-              8 Week Teens Beginners Course
+              8 Week Teens Beginners Course (12 - 16 Years)
             </h1>
             <p className="leading-relaxed mb-4">
               This course runs for 8 weeks. We have classes at 5pm every Monday,
