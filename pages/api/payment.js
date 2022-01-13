@@ -12,6 +12,18 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 export default async (req, res) => {
   const { price, name, email, size } = req.body;
 
+  const testPriceOption = {
+    "beginners-course": "price_1JtcI3L1Vq7u95DfVaWLPyuU",
+    "t-shirt": "price_1JtcIJL1Vq7u95DfwHCgHtj4",
+    "1-private-lesson:": "price_1JtcIXL1Vq7u95DfRvHHD3Qs",
+    "t-shirt-1-private-lesson": "price_1JtcIqL1Vq7u95DfpOxn6PQB",
+    "3-private-lessons": "price_1JtcJIL1Vq7u95DfnS2hmVWJ",
+    "t-shirt-3-private-lessons": "price_1JtcJUL1Vq7u95Df9pphk0kz",
+    "teens-course": "price_1KHQxOL1Vq7u95DfCDCxO8jl",
+  };
+
+  const priceID = testPriceOption[price];
+
   const BASE_URL = req.headers.origin || "http://localhost:3000";
 
   try {
@@ -24,13 +36,13 @@ export default async (req, res) => {
       line_items: [
         {
           // TODO: replace this with the `price` of the product you want to sell
-          price: price,
+          price: priceID,
           quantity: 1,
         },
       ],
     });
 
-    if (session) {
+    /*if (session) {
       const message = {
         from: "info@ecjja.com",
         to: "info@ecjja.com",
@@ -55,7 +67,7 @@ export default async (req, res) => {
       }
 
       return res.status(200).json({ id: session.id });
-    }
+    }*/
     return res.status(200).json({ id: session.id });
   } catch (error) {
     console.log(error);
