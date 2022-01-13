@@ -12,6 +12,18 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 export default async (req, res) => {
   const { price, name, email, size } = req.body;
 
+  const testPriceOption = {
+    "beginners-course": "price_1Jtc4VL1Vq7u95DfksrI2OS0",
+    "t-shirt": "price_1Jtc4mL1Vq7u95DfAd9UCIeE",
+    "1-private-lesson:": "price_1Jtc5CL1Vq7u95DfmbYCALRQ",
+    "t-shirt-1-private-lesson": "price_1Jtc64L1Vq7u95DfOl338iZc",
+    "3-private-lessons": "price_1Jtc6IL1Vq7u95DfNp6I1XWR",
+    "t-shirt-3-private-lessons": "price_1Jtc6jL1Vq7u95DfVpzLR7QV",
+    "teens-course": "price_1KHRKAL1Vq7u95DfZxYFNFFN",
+  };
+
+  const priceID = testPriceOption[price];
+
   const BASE_URL = req.headers.origin || "http://localhost:3000";
 
   try {
@@ -24,7 +36,7 @@ export default async (req, res) => {
       line_items: [
         {
           // TODO: replace this with the `price` of the product you want to sell
-          price: price,
+          price: priceID,
           quantity: 1,
         },
       ],
