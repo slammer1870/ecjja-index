@@ -80,30 +80,6 @@ const CourseProduct = () => {
     setLoading(false);
   };
 
-  useEffect(() => {
-    const changePrice = () => {
-      if (selected == priceOption[0]) {
-        setPrice("235");
-      }
-      if (selected == priceOption[1]) {
-        setPrice("250");
-      }
-      if (selected == priceOption[2]) {
-        setPrice("275");
-      }
-      if (selected == priceOption[3]) {
-        setPrice("300");
-      }
-      if (selected == priceOption[4]) {
-        setPrice("315");
-      }
-      if (selected == priceOption[5]) {
-        setPrice("330");
-      }
-    };
-    changePrice();
-  }, [selected]);
-
   return (
     <section className="text-gray-600 overflow-hidden">
       <div className="px-4 py-6 lg:py-24 mx-auto">
@@ -123,9 +99,8 @@ const CourseProduct = () => {
               8 Week Teens Beginners Course (12 - 16 Years)
             </h1>
             <p className="leading-relaxed mb-4">
-              This course runs for 8 weeks. We have classes at 5pm every Monday,
-              Wednesday and Friday. Once enrolled you are free to attend as many
-              sessions as you like per week. Upon enrolling you will also
+              This course runs for 8 weeks. We have classes at 5pm every Tuesday
+              and Thursday. Upon enrolling you will also
               receive a training uniform included with your purchase.
             </p>
             <div className="flex border-t border-gray-200 py-2">
@@ -141,22 +116,7 @@ const CourseProduct = () => {
               <span className="ml-auto text-gray-900">Included</span>
             </div>
             <form onSubmit={handleSubmit}>
-              <div className="relative mt-1 mb-4">
-                <span className="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    className="w-4 h-4"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M6 9l6 6 6-6" />
-                  </svg>
-                </span>
-              </div>
-              <div>
+              <div className="relative my-4">
                 <h3 className="text-gray-900 text-xl mb-2">
                   Enter your details below to enroll in this course
                 </h3>
