@@ -16,7 +16,21 @@ const CourseProduct = () => {
   const [price, setPrice] = useState();
   const [selected, setSelected] = useState();
 
-  const priceOption = ["price_1JK5WuL1Vq7u95Df5e0Dg5Lr", "price_1JK5YOL1Vq7u95Df5V1QZJKf", "price_1JK5YpL1Vq7u95Dfs6f2zpXA"]
+  //Live Prices
+  //const priceOption = ["price_1Jtc4VL1Vq7u95DfksrI2OS0", "price_1Jtc4mL1Vq7u95DfAd9UCIeE", "price_1Jtc5CL1Vq7u95DfmbYCALRQ", "price_1Jtc64L1Vq7u95DfOl338iZc", "price_1Jtc6IL1Vq7u95DfNp6I1XWR", "price_1Jtc6jL1Vq7u95DfVpzLR7QV"]
+  
+  const priceOption = [
+    "beginners-course",
+    "t-shirt",
+    "1-private-lesson:",
+    "t-shirt-1-private-lesson",
+    "3-private-lessons",
+    "t-shirt-3-private-lessons"
+  ]
+
+  //Test prices
+  //const testPriceOption = ["price_1JtcI3L1Vq7u95DfVaWLPyuU", "price_1JtcIJL1Vq7u95DfwHCgHtj4", "price_1JtcIXL1Vq7u95DfRvHHD3Qs", "price_1JtcIqL1Vq7u95DfpOxn6PQB", "price_1JtcJIL1Vq7u95DfnS2hmVWJ", "price_1JtcJUL1Vq7u95Df9pphk0kz"]
+
 
   const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PK);
 
@@ -72,13 +86,22 @@ const CourseProduct = () => {
   useEffect(() => {
     const changePrice = () => {
       if (selected == priceOption[0]) {
-        setPrice("€220");
+        setPrice("235");
       }
       if (selected == priceOption[1]) {
-        setPrice("€260");
+        setPrice("250");
       }
       if (selected == priceOption[2]) {
-        setPrice("€300");
+        setPrice("275");
+      }
+      if (selected == priceOption[3]) {
+        setPrice("300");
+      }
+      if (selected == priceOption[4]) {
+        setPrice("315");
+      }
+      if (selected == priceOption[5]) {
+        setPrice("330");
       }
     };
     changePrice();
@@ -128,9 +151,12 @@ const CourseProduct = () => {
               <span className="text-gray-500">Training Uniform</span>
               <span className="ml-auto text-gray-900">Included</span>
             </div>
-            <div className="flex border-b mb-6 border-gray-200 py-2">
-              <span className="text-gray-500">Private Lessons</span>
+            <div className="flex border-b border-gray-200 py-2">
+              <span className="text-gray-500">Private Lessons*</span>
               <span className="ml-auto text-gray-900">Optional</span>
+            </div>
+            <div className="mb-6 py-2 text-xs text-gray-700">
+              <p>* What are private lessons? Private lessons are 1 to 1 classes with one of our experienced coaches. Accelerate your learning and get to grips with our curriculum faster!</p>
             </div>
             
             <form onSubmit={handleSubmit}>
@@ -153,10 +179,19 @@ const CourseProduct = () => {
                     Beginners Course
                   </option>
                   <option value={priceOption[1]}>
-                    Beginners Course + 1 Private Lesson
+                    Beginners Course + ECJJA T-Shirt
                   </option>
                   <option value={priceOption[2]}>
+                    Beginners Course + 1 Private Lesson
+                  </option>
+                  <option value={priceOption[3]}>
+                    Beginners Course + 1 Private Lesson + ECJJA T-Shirt
+                  </option>
+                  <option value={priceOption[4]}>
                     Beginners Course + 3 Private Lessons
+                  </option>
+                  <option value={priceOption[5]}>
+                    Beginners Course + 3 Private Lessons + ECJJA T-Shirt
                   </option>
                 </select>
                 <span className="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
@@ -276,7 +311,7 @@ const CourseProduct = () => {
                   </div>
                   <div className="flex border-t pt-4 mt-4 border-gray-200">
                     <span className="title-font font-medium text-2xl text-gray-900">
-                      {price}
+                      €{price}
                     </span>
                     <button
                       type="submit"
