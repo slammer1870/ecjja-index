@@ -87,9 +87,9 @@ export default function Timetable() {
                     11:00am
                   </td>
                   <td className="border-t-2 border-gray-200 px-4 py-3"></td>
-                  <td className="border-t-2 border-gray-200 px-4 py-3 text-sm font-medium text-blue-500"></td>
+                  <td className="border-t-2 border-gray-200 px-4 py-3 text-sm font-medium text-blue-500">Advanced Class (NoGi) - 60 mins</td>
                   <td className="border-t-2 border-gray-200 px-4 py-3"></td>
-                  <td className="border-t-2 border-gray-200 px-4 py-3 text-sm font-medium text-blue-500"></td>
+                  <td className="border-t-2 border-gray-200 px-4 py-3 text-sm font-medium text-blue-500">Advanced Class (NoGi) - 60 mins</td>
                   <td className="border-t-2 border-gray-200 px-4 py-3"></td>
                   <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-sm font-medium text-pink-900">
                     Kid's 8-11 years - 60 mins
@@ -102,11 +102,11 @@ export default function Timetable() {
                   </td>
                   <td className="border-t-2 border-gray-200 px-4 py-3"></td>
                   <td className="border-t-2 border-gray-200 px-4 py-3 text-sm font-medium text-purple-900">
-                    Advanced Class - 90 mins (NoGi)
+                    Advanced Class - 120 mins (Gi)
                   </td>
                   <td className="border-t-2 border-gray-200 px-4 py-3"></td>
                   <td className="border-t-2 border-gray-200 px-4 py-3 text-sm font-medium text-purple-900">
-                    Advanced Class - 90 mins (NoGi)
+                    Advanced Class - 120 mins (Gi)
                   </td>
                   <td className="border-t-2 border-gray-200 px-4 py-3"></td>
                   <td className="border-t-2 border-gray-200 px-4 py-3 text-sm font-medium text-blue-500">
