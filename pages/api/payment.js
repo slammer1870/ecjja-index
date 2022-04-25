@@ -40,6 +40,7 @@ export default async (req, res) => {
           quantity: 1,
         },
       ],
+      allow_promotion_codes: true,
     });
 
     if (session) {
