@@ -37,6 +37,7 @@ export default function Contact() {
     e.target.name.value = "";
     e.target.tel.value = "";
     e.target.message.value = "";
+    e.target.exp.checked = false;
     setLoading(false);
     setMessage("Thank you for your submission!");
   };
