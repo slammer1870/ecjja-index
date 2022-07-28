@@ -230,7 +230,7 @@ const CourseProduct = () => {
                 </div>
                 <div className="flex border-t pt-4 mt-4 border-gray-200">
                   <span className="title-font font-medium text-2xl text-gray-900">
-                    €120
+                    €135
                   </span>
                   <button
                     type="submit"
