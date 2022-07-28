@@ -57,6 +57,7 @@ const CourseProduct = () => {
         price: e.target.product.value,
         email: e.target.email.value,
         name: e.target.name.value,
+        tel: e.target.tel.value,
         size: e.target.size.value,
       }),
       headers: {
@@ -100,8 +101,8 @@ const CourseProduct = () => {
             </h1>
             <p className="leading-relaxed mb-4">
               This course runs for 8 weeks. We have classes at 5pm every Tuesday
-              and Thursday. Upon enrolling you will also
-              receive a training uniform included with your purchase.
+              and Thursday. Upon enrolling you will also receive a training
+              uniform included with your purchase.
             </p>
             <div className="flex border-t border-gray-200 py-2">
               <span className="text-gray-500">Course Type</span>
@@ -126,7 +127,7 @@ const CourseProduct = () => {
                       htmlFor="name"
                       className="leading-7 text-sm text-gray-600"
                     >
-                      Name
+                      Child's Name
                     </label>
                     <input
                       required
@@ -141,13 +142,28 @@ const CourseProduct = () => {
                       htmlFor="email"
                       className="leading-7 text-sm text-gray-600"
                     >
-                      Email
+                      Parent/Guardian's Email
                     </label>
                     <input
                       required
                       type="email"
                       id="email"
                       name="email"
+                      className="w-full bg-white border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    />
+                  </div>
+                  <div className="relative mb-4">
+                    <label
+                      htmlFor="email"
+                      className="leading-7 text-sm text-gray-600"
+                    >
+                      Parent/Guardian's Phone Number
+                    </label>
+                    <input
+                      required
+                      type="tel"
+                      id="tel"
+                      name="tel"
                       className="w-full bg-white border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     />
                   </div>

@@ -10,7 +10,7 @@ mailchimp.setConfig({
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default async (req, res) => {
-  const { price, name, email, size } = req.body;
+  const { price, name, email, tel, size } = req.body;
 
   const testPriceOption = {
     "beginners-course": "price_1Jtc4VL1Vq7u95DfksrI2OS0",
@@ -25,6 +25,12 @@ export default async (req, res) => {
   const priceID = testPriceOption[price];
 
   const BASE_URL = req.headers.origin || "http://localhost:3000";
+
+  const from = process.env.SENDGRID_FROM;
+
+  const to = process.env.SENDGRID_TO;
+
+  console.log(to);
 
   try {
     const session = await stripe.checkout.sessions.create({
@@ -45,10 +51,10 @@ export default async (req, res) => {
 
     if (session) {
       const message = {
-        from: "info@ecjja.com",
-        to: "info@ecjja.com",
+        from: from,
+        to: to,
         subject: `New checkout initiated from ${email}`,
-        text: `${name} has just initiated a checkout session for the next beginner's course. Their Gi size is ${size}. You will receive a confirmation email in this thread once their payment has been approved.`,
+        text: `${name} has just initiated a checkout session for the next beginner's course. Their Gi size is ${size}. Their phone number is ${tel}. You will receive a confirmation email in this thread once their payment has been approved.`,
         replyTo: email,
       };
       await sgMail.send(message);
