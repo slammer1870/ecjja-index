@@ -15,6 +15,7 @@ export default function Contact() {
         name: e.target.name.value,
         tel: e.target.tel.value,
         text: e.target.message.value,
+        exp: e.target.exp.checked,
       }),
       headers: {
         "Content-Type": "application/json",
@@ -159,6 +160,18 @@ export default function Contact() {
                 defaultValue={""}
                 required
               />
+            </div>
+
+            <div className="relative mb-4">
+              <input
+                type="checkbox"
+                id="exp"
+                name="exp"
+                className="mr-2"
+              />
+              <label className="text-xs text-gray-500 mt-3" for="gdpr">
+                Tick this box if you have never tried Jiu Jitsu before
+              </label>
             </div>
             <button
               type="submit"
