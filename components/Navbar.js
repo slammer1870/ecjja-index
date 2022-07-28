@@ -26,7 +26,7 @@ const Navbar = () => {
       <logo className="w-1/4">
         <Link href="/">
           <div
-            className="w-9 h-9 md:h-11 md:w-11 lg:h-14 lg:w-14"
+            className="w-9 h-9 md:h-11 md:w-11 lg:h-14 lg:w-14 cursor-pointer"
             onClick={() => setDropdown(false)}
           >
             <svg
@@ -891,7 +891,8 @@ const Navbar = () => {
         ></div>
         <div
           className={`transform ${
-            open ? "-translate-x-0" : "translate-x-full"} ease-in-out transition-all duration-300 md:translate-x-0 w-1/2 h-screen flex bg-white z-30 right-0 top-0 fixed items-start md:flex md:flex-row md:w-full md:bg-transparent md:h-auto md:relative md:py-0 md:items-center`}
+            open ? "-translate-x-0" : "translate-x-full"
+          } ease-in-out transition-all duration-300 md:translate-x-0 w-1/2 h-screen flex bg-white z-30 right-0 top-0 fixed items-start md:flex md:flex-row md:w-full md:bg-transparent md:h-auto md:relative md:py-0 md:items-center`}
         >
           <ul className="mt-20 flex flex-col text-sm md:mt-0 md:px-0 md:text-base md:flex md:flex-row md:w-full md:bg-transparent md:h-auto md:relative md:py-0 md:justify-between md:items-center font-light">
             <li className="flex flex-col" onClick={handleDropdown}>
@@ -903,7 +904,7 @@ const Navbar = () => {
                   viewBox="0 0 19 10"
                   className={`mr-3 transform ${
                     dropdown ? "rotate-0" : "-rotate-90"
-                  } duration-75 ease-in-out`}
+                  } duration-75 ease-in-out cursor-pointer`}
                 >
                   <g
                     id="Polygon_2"
@@ -922,7 +923,7 @@ const Navbar = () => {
                     />
                   </g>
                 </svg>
-                <span className="hover:underline">Programs</span>
+                <span className="hover:underline cursor-pointer">Programs</span>
               </div>
               <ul
                 className={`${
@@ -933,7 +934,7 @@ const Navbar = () => {
               >
                 <Link href="/adults-program">
                   <li
-                    className="w-24 mt-2 ml-4 hover:underline"
+                    className="w-24 mt-2 ml-4 hover:underline cursor-pointer"
                     onClick={handleOpen}
                   >
                     Adults
@@ -941,7 +942,7 @@ const Navbar = () => {
                 </Link>
                 <Link href="/kids-program">
                   <li
-                    className="mt-2 md:pb-4 ml-4 hover:underline"
+                    className="mt-2 md:pb-4 ml-4 hover:underline cursor-pointer"
                     onClick={handleOpen}
                   >
                     Kids &amp; Teens
@@ -951,7 +952,7 @@ const Navbar = () => {
             </li>
             <Link href="/timetable">
               <li
-                className="ml-9 mt-4 md:mt-0 md:ml-0 hover:underline"
+                className="ml-9 mt-4 md:mt-0 md:ml-0 hover:underline cursor-pointer"
                 onClick={handleOpen}
               >
                 Timetable
@@ -959,7 +960,7 @@ const Navbar = () => {
             </Link>
             <Link href="/ecjja-online">
               <li
-                className="ml-9 mt-4 md:mt-0 md:ml-0 hover:underline"
+                className="ml-9 mt-4 md:mt-0 md:ml-0 hover:underline cursor-pointer"
                 onClick={handleOpen}
               >
                 ECJJA Online
@@ -967,7 +968,7 @@ const Navbar = () => {
             </Link>
             <Link href="/contact">
               <li
-                className="ml-9 mt-4 md:mt-0 md:ml-0 bg-gray-400 px-2 py-1 text-white text-center w-24 md:w-auto hover:underline"
+                className="ml-9 mt-4 md:mt-0 md:ml-0 bg-gray-400 px-2 py-1 text-white text-center w-24 md:w-auto hover:underline cursor-pointer"
                 onClick={handleOpen}
               >
                 Contact Us
