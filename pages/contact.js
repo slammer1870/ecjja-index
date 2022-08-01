@@ -138,13 +138,14 @@ export default function Contact() {
             </div>
             <div className="relative mb-4">
               <label htmlFor="tel" className="leading-7 text-sm text-gray-600">
-                Phone Number (optional)
+                Phone Number
               </label>
               <input
                 type="tel"
                 id="tel"
                 name="tel"
                 className="w-full bg-white border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                required
               />
             </div>
             <div className="relative mb-4">
@@ -164,12 +165,7 @@ export default function Contact() {
             </div>
 
             <div className="relative mb-4">
-              <input
-                type="checkbox"
-                id="exp"
-                name="exp"
-                className="mr-2"
-              />
+              <input type="checkbox" id="exp" name="exp" className="mr-2" />
               <label className="text-xs text-gray-500 mt-3" for="gdpr">
                 Tick this box if you have never tried Jiu Jitsu before
               </label>
