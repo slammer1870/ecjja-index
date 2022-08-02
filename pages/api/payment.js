@@ -19,7 +19,8 @@ export default async (req, res) => {
     "t-shirt-1-private-lesson": "price_1Jtc64L1Vq7u95DfOl338iZc",
     "3-private-lessons": "price_1Jtc6IL1Vq7u95DfNp6I1XWR",
     "t-shirt-3-private-lessons": "price_1Jtc6jL1Vq7u95DfVpzLR7QV",
-    "teens-course": "price_1LQbERL1Vq7u95DfEnHtrP11",
+    "kids-course": "price_1LQbERL1Vq7u95DfEnHtrP11",
+    "teens-course": "price_1LSUdgL1Vq7u95DfLQdyzKQE"
   };
 
   const priceID = testPriceOption[price];
