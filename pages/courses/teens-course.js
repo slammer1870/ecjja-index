@@ -100,8 +100,8 @@ const CourseProduct = () => {
               8 Week Teens Beginners Course (12 - 16 Years)
             </h1>
             <p className="leading-relaxed mb-4">
-              This course runs for 8 weeks. We have classes at 5pm every Tuesday
-              and Thursday. Upon enrolling you will also receive a training
+              This course runs for 8 weeks. We have classes at 5pm every Monday
+              and Wednesday. Upon enrolling you will also receive a training
               uniform included with your purchase.
             </p>
             <div className="flex border-t border-gray-200 py-2">
@@ -230,7 +230,7 @@ const CourseProduct = () => {
                 </div>
                 <div className="flex border-t pt-4 mt-4 border-gray-200">
                   <span className="title-font font-medium text-2xl text-gray-900">
-                    €135
+                    €150
                   </span>
                   <button
                     type="submit"
